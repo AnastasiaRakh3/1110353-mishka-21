@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anastasiia Rakhmatova](https://up.htmlacademy.ru/adaptive/21/user/1110353).
-* Наставник: `Неизвестно`.
+* Наставник: `[Владислав Кривокора](https://htmlacademy.ru/profile/id167185)`.
 
 ---
 
