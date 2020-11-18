@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип сайта «Мишка»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Новые поступления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="page-header__note">Бесплатная доставка по России</p>
+  </header>
+  <main class="page__main">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <h1 class="main-heading">Вязание на заказ</h1>
+      </div>
+    </header>
+    <form class="form" action="" method="get">
+      <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <fieldset class="form__item product-type">
+        <legend class="product-type__heading">Тип</legend>
+        <input class="visually-hidden" type="radio" name="product-type" value="product-one" id="interior" checked>
+        <label class="product-type__label" for="interior">Аксессуар для интерьера</label>
+        <input class="visually-hidden" type="radio" name="product-type" value="product-two" id="toy">
+        <label class="product-type__label" for="toy">Аксессуар для интерьера</label>
+      </fieldset>
+      <fieldset class="form__item product-color">
+        <legend class="product-color__heading">Цвет</legend>
+        <input class="visually-hidden" type="checkbox" name="white-color" value="Белый" id="white-color" checked>
+        <label class="product-color__label" for="white-color">Белый</label>
+        <input class="visually-hidden" type="checkbox" name="grey-color" value="Серый" id="grey-color" checked>
+        <label class="product-color__label" for="grey-color">Серый</label>
+        <input class="visually-hidden" type="checkbox" name="tiffani-color" value="Тиффани" id="tiffani-color">
+        <label class="product-color__label" for="tiffani-color">«Тиффани»</label>
+        <input class="visually-hidden" type="checkbox" name="black-color" value="Черный" id="black-color">
+        <label class="product-color__label" for="black-color">Черный</label>
+        <input class="visually-hidden" type="checkbox" name="pink-color" value="Розовый" id="pink-color">
+        <label class="product-color__label" for="pink-color">Розовый</label>
+        <input class="visually-hidden" type="checkbox" name="orange-color" value="Оранжевый" id="orange-color">
+        <label class="product-color__label" for="pink-color">Оранжевый</label>
+      </fieldset>
+      <fieldset class="form__item customer-name">
+        <legend class="customer-name__heading">ФИО</legend>
+        <label class="customer-name__label" for="first-name">Имя:</label>
+        <input class="customer-name__field" type="text" name="first-name" id="first-name"
+          placeholder="Введите ваше имя*" required>
+        <label class="customer-name__label" for="last-name">Фамилия:</label>
+        <input class="customer-name__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*"
+          required>
+        <label class="customer-name__label" for="middle-name">Отчество:</label>
+        <input class="customer-name__field" type="text" name="middle-name" id="middle-name"
+          placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="form__item customer-tel">
+        <legend class="customer-name__heading">Тел</legend>
+        <label class="visually-hidden" for="customer-tel-number">Телефон</label>
+        <input class="customer-tel__field" type="tel" name="customer-tel-number" id="customer-tel-number"
+          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+          required>
+      </fieldset>
+      <fieldset class="form__item customer-email">
+        <legend class="customer-email__heading">E-mail</legend>
+        <label class="visually-hidden" for="customer-email-address">Электронный адрес</label>
+        <input class="customer-email__field" type="email" name="customer-email-address" id="customer-email-address"
+          placeholder="Ваш Email*" required>
+      </fieldset>
+      <fieldset class="form__item customer-comment">
+        <legend class="customer-comment__heading">Доп</legend>
+        <textarea class="customer-comment__field" name="customer-comment-message" id="customer-comment-message"
+          placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </fieldset>
+      <p class="form__note">*Поля обязательны для заполнения</p>
+      <button class="form__button button" type="submit">Отправить заказ</button>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Логотип сайта «Мишка">
+      <ul class="page-footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href=""><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href=""><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href=""><span class="visually-hidden">Твиттер</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="">
+          <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
