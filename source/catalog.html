@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -80,7 +81,7 @@
       </ul>
     </section>
     <section class="video">
-      <h2 class="video__heading video__heading--position">Процесс производства</h2>
+      <h2 class="video__heading">Процесс производства</h2>
       <div class="video__wrapper">
         <video class="video__watch" src="" width="" height="" poster="https://via.placeholder.com/150x150"></video>
         <button class="video__button-play" type="button" aria-label="Воспроизвести видео"></button>
@@ -113,17 +114,17 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-cart">
-    <h2 class="modal-cart__heading">Добавить в корзину</h2>
-    <form class="modal-cart__form" action="https://echo.htmlacademy.ru/" method="POST">
-      <p class="modal-cart__description">Выберите размер:</p>
-      <label class="modal-cart__label" for="product-size-s">s</label>
+  <section class="modal">
+    <h2 class="modal__heading">Добавить в корзину</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+      <p class="modal__description">Выберите размер:</p>
+      <label class="modal__label" for="product-size-s">s</label>
       <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
-      <label class="modal-cart__label" for="product-size-m">m</label>
+      <label class="modal__label" for="product-size-m">m</label>
       <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
-      <label class="modal-cart__label" for="product-size-l">l</label>
+      <label class="modal__label" for="product-size-l">l</label>
       <input class="visually-hidden" type="radio" name="product-size" value="product-size-l" id="product-size-l">
-      <button class="modal-cart__button button" type="submit">Добавить</button>
+      <button class="modal__button button" type="submit">Добавить</button>
     </form>
   </section>
 

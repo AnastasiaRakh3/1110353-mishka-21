@@ -1,0 +1,18 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  &--interior {
+    background-color: #63d1bb;
+  }
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
