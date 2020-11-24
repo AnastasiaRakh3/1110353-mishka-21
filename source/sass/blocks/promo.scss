@@ -1,25 +1,34 @@
 .promo__heading {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 700;
-  color: #000000;
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  color: $black;
 }
+
 .promo__note {
-  margin: 0;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: $bold;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $dark-mint;
 }
+
 .promo__text {
-  margin: 0;
-  font-size: 15px;
+  font-size: $text-fontsize-1;
   line-height: 24px;
 }
+
 .promo__table {
-  font-size: 15px;
+  font-size: $text-fontsize-1;
   line-height: 24px;
 }
+
+.promo__feature {
+  border-bottom: 1px solid $light-gray;
+}
+
+.promo__description {
+  border-bottom: 1px solid $light-gray;
+}
+
 .promo__price {
   line-height: 24px;
   font-weight: 700;

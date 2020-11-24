@@ -1,18 +1,16 @@
 .menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .menu__link {
   font-size: 19px;
   line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: $bold;
+  color: $white;
   &--interior {
-    background-color: #63d1bb;
+    background-color: $mint;
   }
   &--toys {
-    background-color: #56c3b2;
+    background-color: $dark-mint;
   }
 }

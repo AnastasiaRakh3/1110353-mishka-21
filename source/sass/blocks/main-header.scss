@@ -1,7 +1,5 @@
 .main-header__heading {
-  margin: 0;
-  font-weight: bold;
-  font-size: 27px;
+  font-weight: $bold;
+  font-size: $heading-fontsize-l1;
   line-height: 30px;
-  list-style: none;
 }

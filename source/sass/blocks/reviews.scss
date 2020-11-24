@@ -1,25 +1,26 @@
 .reviews__heading {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 700;
-  color: #000000;
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  color: $black;
 }
+
 .reviews__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
-.reviews__item {
-  margin: 0;
-}
+
 .reviews__text {
-  margin: 0;
-  font-size: 15px;
+  font-size: $text-fontsize-1;
 }
+
 .reviews__author {
   font-style: normal;
 }
+
 .reviews__author-name {
   line-height: 24px;
-  color: #000000;
+  color: $black;
+}
+
+.reviews__button {
+  border: 1px solid $light-gray;
 }

@@ -1,6 +1,9 @@
+.page-header {
+  box-shadow: $box-shadow;
+}
+
 .page-header__note {
-  margin: 0;
-  font-size: 15px;
+  font-size: $text-fontsize-1;
   line-height: 24px;
-  color: #000000;
+  color: $black;
 }

@@ -1,22 +1,24 @@
 .modal__heading {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 700;
-  color: #000000;
-}
-.modal__description {
-  margin: 0;
-  font-size: 15px;
-}
-.modal__label {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
   text-transform: uppercase;
+  color: $black;
 }
+
+.modal__description {
+  font-size: $text-fontsize-1;
+}
+
+.modal__label {
+  font-size: $text-fontsize-2;
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  border: 2px solid $dark-gray;
+}
+
 .modal__button {
-  padding: 0;
-  color: #000000;
-  background-color: #63d1bb;
+  color: $white;
+  background-color: $mint;
   border: none;
 }
