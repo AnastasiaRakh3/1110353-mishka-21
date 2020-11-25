@@ -1,3 +1,9 @@
+.main-header {
+  background-image: url("../../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .main-header__heading {
   font-weight: $bold;
   font-size: $heading-fontsize-l1;
