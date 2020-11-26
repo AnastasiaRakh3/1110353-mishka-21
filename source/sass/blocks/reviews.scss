@@ -1,7 +1,7 @@
 .reviews__heading {
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
-  color: $black;
+  color: $color-text-head;
 }
 
 .reviews__list {
@@ -18,9 +18,9 @@
 
 .reviews__author-name {
   line-height: 24px;
-  color: $black;
+  color: $color-text-head;
 }
 
 .reviews__button {
-  border: 1px solid $light-gray;
+  border: 1px solid $color-decor2;
 }

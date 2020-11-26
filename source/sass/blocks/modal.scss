@@ -2,7 +2,7 @@
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
   text-transform: uppercase;
-  color: $black;
+  color: $color-text-head;
 }
 
 .modal__description {
@@ -14,11 +14,11 @@
   line-height: 16px;
   font-weight: $bold;
   text-transform: uppercase;
-  border: 2px solid $dark-gray;
+  border: 2px solid $color-decor2;
 }
 
 .modal__button {
-  color: $white;
-  background-color: $mint;
+  color: $color-origin;
+  background-color: $color-main1;
   border: none;
 }

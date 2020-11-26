@@ -2,3 +2,16 @@
   padding-left: 0;
   list-style: none;
 }
+
+@mixin label-style {
+  line-height: 18px;
+  font-weight: $bold;
+  color: $color-text-head;
+}
+
+@mixin form-heading-style {
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $color-main1;
+}

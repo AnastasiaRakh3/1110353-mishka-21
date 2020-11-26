@@ -1,14 +1,14 @@
 .promo__heading {
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
-  color: $black;
+  color: $color-text-head;
 }
 
 .promo__note {
   line-height: 20px;
   font-weight: $bold;
   text-transform: uppercase;
-  color: $dark-mint;
+  color: $color-main2;
 }
 
 .promo__text {
@@ -22,11 +22,11 @@
 }
 
 .promo__feature {
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $color-decor2;
 }
 
 .promo__description {
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $color-decor2;
 }
 
 .promo__price {

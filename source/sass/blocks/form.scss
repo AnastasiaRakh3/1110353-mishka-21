@@ -1,0 +1,40 @@
+.form__intro {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form__item {
+  border-top: 1px solid $color-decor1;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.form__heading {
+  @include form-heading-style;
+}
+
+.form__label,
+.form__label-top {
+  @include label-style;
+}
+
+.form__field::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-text-head;
+  opacity: 0.3;
+}
+
+.form__field-comment {
+  resize: none;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  background-color: transparent;
+}
