@@ -1,0 +1,24 @@
+.modal__heading {
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.modal__description {
+  font-size: $text-fontsize-1;
+}
+
+.modal__label {
+  font-size: $text-fontsize-2;
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  border: 2px solid $dark-gray;
+}
+
+.modal__button {
+  color: $white;
+  background-color: $mint;
+  border: none;
+}

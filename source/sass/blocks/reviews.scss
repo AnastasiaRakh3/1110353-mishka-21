@@ -1,0 +1,26 @@
+.reviews__heading {
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  color: $black;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__text {
+  font-size: $text-fontsize-1;
+}
+
+.reviews__author {
+  font-style: normal;
+}
+
+.reviews__author-name {
+  line-height: 24px;
+  color: $black;
+}
+
+.reviews__button {
+  border: 1px solid $light-gray;
+}

@@ -1,0 +1,21 @@
+.contacts__heading {
+  font-size: $heading-fontsize-s1;
+  font-weight: $bold;
+  color: $black;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__name,
+.contacts__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-gray;
+}
+
+.contacts__item:first-child .contacts__text {
+  border-bottom: 1px solid $mint-underlined;
+}

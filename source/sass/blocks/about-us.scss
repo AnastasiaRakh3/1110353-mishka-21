@@ -1,0 +1,15 @@
+.about-us__heading {
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  color: $black;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  line-height: 20px;
+  font-weight: $bold;
+  color: $black;
+}

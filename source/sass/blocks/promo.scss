@@ -1,0 +1,35 @@
+.promo__heading {
+  font-size: $heading-fontsize-m1;
+  font-weight: $bold;
+  color: $black;
+}
+
+.promo__note {
+  line-height: 20px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $dark-mint;
+}
+
+.promo__text {
+  font-size: $text-fontsize-1;
+  line-height: 24px;
+}
+
+.promo__table {
+  font-size: $text-fontsize-1;
+  line-height: 24px;
+}
+
+.promo__feature {
+  border-bottom: 1px solid $light-gray;
+}
+
+.promo__description {
+  border-bottom: 1px solid $light-gray;
+}
+
+.promo__price {
+  line-height: 24px;
+  font-weight: 700;
+}
