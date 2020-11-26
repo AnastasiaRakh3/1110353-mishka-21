@@ -11,12 +11,17 @@
 }
 
 .form__heading {
-  @include form-heading-style;
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $color-main1;
 }
 
 .form__label,
 .form__label-top {
-  @include label-style;
+  line-height: 18px;
+  font-weight: $bold;
+  color: $color-text-head;
 }
 
 .form__field::placeholder {
