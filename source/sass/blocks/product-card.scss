@@ -1,0 +1,25 @@
+.product-card {
+  border-bottom: 1px solid $color-decor3;
+}
+
+.product-card__name-wrapper {
+  color: #000000;
+}
+
+.product-card__name {
+  font-size: $text-fontsize-2;
+  line-height: 27px;
+  font-weight: $bold;
+}
+
+.product-card__description {
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom: 1px solid $color-decor3;
+}
+
+.product-card__price {
+  font-size: $text-fontsize-1;
+  line-height: 24px;
+  font-weight: $bold;
+}
