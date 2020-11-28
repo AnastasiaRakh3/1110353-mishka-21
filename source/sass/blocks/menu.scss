@@ -6,13 +6,13 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: $bold;
-  color: $white;
+  color: $color-origin;
 
   &--interior {
-    background-color: $mint;
+    background-color: $color-main1;
   }
 
   &--toys {
-    background-color: $dark-mint;
+    background-color: $color-main2;
   }
 }

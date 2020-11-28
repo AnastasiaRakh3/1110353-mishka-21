@@ -1,7 +1,7 @@
 .contacts__heading {
   font-size: $heading-fontsize-s1;
   font-weight: $bold;
-  color: $black;
+  color: $color-text-head;
 }
 
 .contacts__list {
@@ -13,9 +13,9 @@
   font-style: normal;
   font-size: 14px;
   line-height: 30px;
-  color: $dark-gray;
+  color: $color-decor2;
 }
 
 .contacts__item:first-child .contacts__text {
-  border-bottom: 1px solid $mint-underlined;
+  border-bottom: 1px solid $color-decor1;
 }

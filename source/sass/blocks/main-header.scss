@@ -4,6 +4,11 @@
   background-position: center top;
 }
 
+.main-header--wider {
+  background-color: $color-bg;
+  background-image: none;
+}
+
 .main-header__heading {
   font-weight: $bold;
   font-size: $heading-fontsize-l1;
