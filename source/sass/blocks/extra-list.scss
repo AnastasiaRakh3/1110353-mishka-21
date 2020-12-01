@@ -1,0 +1,23 @@
+
+@media (min-width: $desktop-width) {
+  .extra-list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 50px;
+  }
+
+  .extra-list__item {
+    margin-right: 60px;
+    line-height: 24px;
+  }
+
+  .extra-list__link {
+    font-size: $text-fontsize-1;
+    line-height: 24px;
+    font-weight: $bold;
+    color: $color-text-head;
+  }
+}

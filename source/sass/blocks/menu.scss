@@ -1,8 +1,28 @@
 .menu {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.menu__item {
+  width: 100%;
+  background-color: grey;
 }
 
 .menu__link {
+  display: block;
+  width: 100%;
   font-size: 19px;
   line-height: 24px;
   font-weight: $bold;
@@ -14,5 +34,10 @@
 
   &--toys {
     background-color: $color-main2;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }

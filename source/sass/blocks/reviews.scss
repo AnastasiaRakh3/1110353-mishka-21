@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  position: relative;
+}
+
 .reviews__heading {
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
@@ -21,6 +25,36 @@
   color: $color-text-head;
 }
 
-.reviews__button {
+.reviews__toggles {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 30px;
+    bottom: 96px;
+  }
+}
+
+.reviews__toggle {
   border: 1px solid $color-decor2;
+}
+
+.reviews__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    width: 175px;
+  }
 }

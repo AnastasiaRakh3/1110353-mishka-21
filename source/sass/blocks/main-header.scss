@@ -4,13 +4,35 @@
   background-position: center top;
 }
 
-.main-header--wider {
+.main-header--bg-color {
   background-color: $color-bg;
   background-image: none;
 }
 
+.main-header__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .main-header__heading {
+  min-height: 283px;
+  margin-top: 73px;
   font-weight: $bold;
   font-size: $heading-fontsize-l1;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    min-height: 627px;
+    font-size: $heading-fontsize-l2;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    min-height: 627px;
+    font-size: $heading-fontsize-l3;
+    line-height: 57px;
+  }
 }

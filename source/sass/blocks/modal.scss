@@ -1,23 +1,80 @@
+.modal {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 1px solid $color-shadow-card;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 566px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+}
+
 .modal__heading {
+  margin: 28px 40px 14px 44px;
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
   text-transform: uppercase;
+  text-align: center;
   color: $color-text-head;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 37px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+    margin-bottom: 11px;
+  }
 }
 
 .modal__description {
+  margin-bottom: 21px;
   font-size: $text-fontsize-1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.modal__sizes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .modal__label {
+  width: 33%;
+  height: 52px;
   font-size: $text-fontsize-2;
-  line-height: 16px;
+  line-height: 48px;
   font-weight: $bold;
   text-transform: uppercase;
+  text-align: center;
   border: 2px solid $color-decor2;
 }
 
+.modal__label:not(:last-of-type) {
+  margin-right: 7px;
+}
+
 .modal__button {
+  width: 100%;
+  margin-bottom: 46px;
   color: $color-origin;
   background-color: $color-main1;
   border: none;

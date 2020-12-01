@@ -1,4 +1,7 @@
 .socials {
   @include list-reset;
+  width: 142px;
+  height: 28px;
+  background-color: khaki;
   border-bottom: 1px solid $color-decor2;
 }
