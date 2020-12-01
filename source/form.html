@@ -11,35 +11,37 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo header-logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип сайта «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html"> Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Новые поступления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Распродажа</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--search" href="">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--cart" href="">Корзина: пока пуста</a>
-            </li>
-            <ul>
-        </div>
+      <div class="page-header__logo-wrapper">
+        <a class="header-logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+        </a>
+      </div>
+      <nav class="page-header__nav">
+        <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="page-header__nav-site site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link " href="">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__nav-extra extra-list">
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Новые поступления</a>
+          </li>
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="page-header__nav-user user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
       <p class="page-header__note">Бесплатная доставка по России</p>
     </div>
