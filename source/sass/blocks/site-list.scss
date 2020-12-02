@@ -16,6 +16,16 @@
   }
 }
 
+.site-list--bg-color {
+  @media (min-width: $tablet-width) {
+    background-color: $color-bg;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
 .site-list__item {
   padding-right: 30px;
   padding-left: 30px;

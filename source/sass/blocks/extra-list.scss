@@ -4,8 +4,9 @@
     @include list-reset;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
+    padding-top: 20px;
     padding-left: 50px;
   }
 
