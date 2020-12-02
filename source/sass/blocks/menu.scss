@@ -17,6 +17,8 @@
 
 .menu__link {
   display: block;
+  padding-right: 30px;
+  padding-left: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: $bold;
@@ -30,8 +32,10 @@
     background-color: $color-main2;
   }
 
-  @media (max-width: $mobile-width-only) {
-    padding-right: 30px;
-    padding-left: 30px;
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: $heading-fontsize-s2;
+    line-height: 30px;
   }
 }

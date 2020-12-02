@@ -26,6 +26,13 @@
   @media (min-width: $tablet-width) {
     padding-right: 50px;
     padding-left: 50px;
+    font-size: $heading-fontsize-l2;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $heading-fontsize-l3;
+    line-height: 57px;
   }
 }
 
@@ -56,8 +63,11 @@
 .contacts__text {
   font-style: normal;
   font-size: 14px;
-  line-height: 30px;
   color: $color-decor2;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-fontsize-2;
+  }
 }
 
 .contacts__name {
@@ -76,13 +86,19 @@
 }
 
 .contacts__button {
+  margin-right: 30px;
+  margin-left: 30px;
+
   @media (min-width: $tablet-width) {
     width: 230px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
     grid-column: 1/2;
     grid-row: 2/3;
+    margin-right: 0;
+    margin-left: 50px;
   }
 }

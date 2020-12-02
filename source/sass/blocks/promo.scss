@@ -101,6 +101,10 @@
 .promo__price {
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: $heading-fontsize-s2;
+  }
 }
 
 .promo__button {
