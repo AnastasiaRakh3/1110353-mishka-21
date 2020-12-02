@@ -37,6 +37,7 @@
   font-size: $heading-fontsize-l1;
   line-height: 30px;
   text-align: center;
+  color: $color-text-head;
 
   @media (min-width: $tablet-width) {
     width: 500px;
