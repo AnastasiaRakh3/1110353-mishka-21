@@ -1,5 +1,10 @@
 .reviews__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 175px;
+  }
 }
 
 .reviews__heading {
@@ -14,15 +19,30 @@
 
 .reviews__text {
   font-size: $text-fontsize-1;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-fontsize-2;
+  }
 }
 
 .reviews__author {
   font-style: normal;
 }
 
-.reviews__author-name {
+.reviews__author-name,
+.reviews__author-mail {
   line-height: 24px;
   color: $color-text-head;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .reviews__toggles {
@@ -45,14 +65,8 @@
 
 .reviews__button {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 79px;
-    right: 50px;
-    width: 175px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
+    grid-column: 2/3;
+    grid-row: 1/2;
     top: 79px;
     right: 50px;
     width: 175px;

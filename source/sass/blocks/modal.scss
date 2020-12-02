@@ -4,6 +4,7 @@
   padding-left: 30px;
   border: 1px solid $color-shadow-card;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 566px;

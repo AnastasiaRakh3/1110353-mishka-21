@@ -1,2 +1,7 @@
-/* stylelint-disable */
-/* stylelint-enable */
+.slider__item {
+  display: none;
+}
+
+.slider__item--current {
+  display: block;
+}
