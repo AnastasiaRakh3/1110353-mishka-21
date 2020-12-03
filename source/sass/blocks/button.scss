@@ -1,8 +1,11 @@
 .button {
+  display: block;
+  height: 50px;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 48px;
   font-weight: $bold;
   text-transform: uppercase;
+  text-align: center;
   color: $color-text-general;
   background-color: transparent;
   border: 2px solid $color-text-general;

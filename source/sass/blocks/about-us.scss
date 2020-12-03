@@ -2,14 +2,39 @@
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
   color: $color-text-head;
+
+  @media (min-width: $tablet-width) {
+    font-size: $heading-fontsize-l2;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $heading-fontsize-l3;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    column-count: 2;
+    column-width: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-count: 2;
+    column-width: 50% 50%;
+  }
 }
 
 .about-us__item {
   line-height: 20px;
   font-weight: $bold;
   color: $color-text-head;
+
+  @media (min-width: $tablet-width) {
+    font-size: $heading-fontsize-s2;
+    line-height: 22px;
+  }
 }

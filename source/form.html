@@ -3,41 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo header-logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип сайта «Мишка»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="header-logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+        </a>
+      </div>
+      <nav class="page-header__nav">
+        <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="page-header__nav-site site-list site-list--bg-color">
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html"> Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Новые поступления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Распродажа</a>
+            <a class="site-list__link " href="">Вязание на заказ</a>
           </li>
         </ul>
-        <a class="user-link" href="">Поиск по сайту</a>
-        <a class="user-link" href="">Корзина: пока пуста</a>
-      </div>
-    </nav>
-    <p class="page-header__note">Бесплатная доставка по России</p>
+        <ul class="page-header__nav-extra extra-list">
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Новые поступления</a>
+          </li>
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="page-header__nav-user user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="page-header__note page-header__note--bg-color">Бесплатная доставка по России</p>
+    </div>
   </header>
   <main class="page__main">
-    <div class="main-header main-header--wider">
-        <h1 class="main-header__heading">Вязание на заказ</h1>
+    <div class="main-header main-header--bg-color container">
+      <h1 class="main-header__heading">Вязание на заказ</h1>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -66,27 +77,22 @@
       <fieldset class="form__item">
         <legend class="form__heading">ФИО</legend>
         <label class="form__label-top" for="first-name">Имя:</label>
-        <input class="form__field" type="text" name="first-name" id="first-name"
-          placeholder="Введите ваше имя*" required>
+        <input class="form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
         <label class="form__label-top" for="last-name">Фамилия:</label>
-        <input class="form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*"
-          required>
+        <input class="form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
         <label class="form__label-top" for="middle-name">Отчество:</label>
-        <input class="form__field" type="text" name="middle-name" id="middle-name"
-          placeholder="Отчество, если желаете">
+        <input class="form__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="form__item">
         <legend class="form__heading">Тел</legend>
         <label class="visually-hidden" for="customer-tel">Телефон</label>
         <input class="form__field" type="tel" name="customer-tel" id="customer-tel"
-          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-          required>
+          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </fieldset>
       <fieldset class="form__item">
         <legend class="form__heading">E-mail</legend>
         <label class="visually-hidden" for="customer-email">Электронный адрес</label>
-        <input class="form__field" type="email" name="customer-email" id="customer-email"
-          placeholder="Ваш Email*" required>
+        <input class="form__field" type="email" name="customer-email" id="customer-email" placeholder="Ваш Email*" required>
       </fieldset>
       <fieldset class="form__item">
         <legend class="form__heading">Доп</legend>
@@ -100,7 +106,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a  class="page-footer__logo footer-logo" href="index.html">
+      <a class="page-footer__logo footer-logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" alt="Логотип сайта «Мишка">
       </a>
       <ul class="page-footer__socials socials">

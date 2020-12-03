@@ -1,2 +1,17 @@
-/* stylelint-disable */
-/* stylelint-enable */
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    height: 100%;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    padding-left: 0;
+  }
+}

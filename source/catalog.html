@@ -3,41 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo header-logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип сайта «Мишка»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="header-logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+        </a>
+      </div>
+      <nav class="page-header__nav">
+        <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Новые поступления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Распродажа</a>
+            <a class="site-list__link " href="">Вязание на заказ</a>
           </li>
         </ul>
-        <a class="user-link" href="">Поиск по сайту</a>
-        <a class="user-link" href="">Корзина: пока пуста</a>
-      </div>
-    </nav>
-    <p class="page-header__note">Бесплатная доставка по России</p>
+        <ul class="page-header__nav-extra extra-list">
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Новые поступления</a>
+          </li>
+          <li class="extra-list__item">
+            <a class="extra-list__link" href="">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="page-header__nav-user user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="page-header__note">Бесплатная доставка по России</p>
+    </div>
   </header>
   <main class="page__main">
-    <div class="main-header main-header--wider">
-        <h1 class="main-header__heading">Каталог товаров</h1>
+    <div class="main-header main-header--bg-color">
+      <h1 class="main-header__heading">Каталог товаров</h1>
     </div>
     <section class="products">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -90,7 +101,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a  class="page-footer__logo footer-logo" href="index.html">
+      <a class="page-footer__logo footer-logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" alt="Логотип сайта «Мишка">
       </a>
       <ul class="page-footer__socials socials">
@@ -116,12 +127,14 @@
     <h2 class="modal__heading">Добавить в корзину</h2>
     <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="modal__description">Выберите размер:</p>
-      <label class="modal__label" for="product-size-s">s</label>
-      <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
-      <label class="modal__label" for="product-size-m">m</label>
-      <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
-      <label class="modal__label" for="product-size-l">l</label>
-      <input class="visually-hidden" type="radio" name="product-size" value="product-size-l" id="product-size-l">
+      <div class="modal__sizes">
+        <label class="modal__label" for="product-size-s">s</label>
+        <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
+        <label class="modal__label" for="product-size-m">m</label>
+        <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
+        <label class="modal__label" for="product-size-l">l</label>
+        <input class="visually-hidden" type="radio" name="product-size" value="product-size-l" id="product-size-l">
+      </div>
       <button class="modal__button button" type="submit">Добавить</button>
     </form>
   </section>

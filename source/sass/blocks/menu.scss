@@ -1,8 +1,24 @@
 .menu {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
 
 .menu__link {
+  display: block;
+  padding-right: 30px;
+  padding-left: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: $bold;
@@ -14,5 +30,12 @@
 
   &--toys {
     background-color: $color-main2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: $heading-fontsize-s2;
+    line-height: 30px;
   }
 }

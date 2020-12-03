@@ -1,7 +1,26 @@
+.promo__wrapper {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
+}
+
 .promo__heading {
   font-size: $heading-fontsize-m1;
+  line-height: 30px;
   font-weight: $bold;
   color: $color-text-head;
+
+  @media (min-width: $desktop-width) {
+    font-size: $heading-fontsize-l2;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $heading-fontsize-l3;
+    line-height: 57px;
+  }
 }
 
 .promo__note {
@@ -9,27 +28,87 @@
   font-weight: $bold;
   text-transform: uppercase;
   color: $color-main2;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 63px;
+    width: 100px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 82px;
+  }
+}
+
+.promo__card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 110px;
+  }
+}
+
+.promo__info {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }
 
 .promo__text {
   font-size: $text-fontsize-1;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-fontsize-2;
+    line-height: 30px;
+  }
 }
 
 .promo__table {
   font-size: $text-fontsize-1;
-  line-height: 24px;
+  line-height: 20px;
 }
 
-.promo__feature {
-  border-bottom: 1px solid $color-decor2;
-}
-
+.promo__feature,
 .promo__description {
   border-bottom: 1px solid $color-decor2;
+}
+
+.promo__buy {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .promo__price {
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: $heading-fontsize-s2;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }
