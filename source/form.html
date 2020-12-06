@@ -9,11 +9,12 @@
 </head>
 
 <body class="page__body">
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="header-logo" href="index.html">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+          <img src="img/mishka-logo-one.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
         </a>
       </div>
       <nav class="page-header__nav">
@@ -46,12 +47,14 @@
       <p class="page-header__note page-header__note--bg-color">Бесплатная доставка по России</p>
     </div>
   </header>
+
   <main class="page__main">
     <div class="main-header main-header--bg-color container">
       <h1 class="main-header__heading">Вязание на заказ</h1>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-      <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form__item">
         <legend class="form__heading">Тип</legend>
         <input class="visually-hidden" type="radio" name="product-type" value="product-one" id="interior" checked>
@@ -59,7 +62,7 @@
         <input class="visually-hidden" type="radio" name="product-type" value="product-two" id="toy">
         <label class="form__label" for="toy">Детская игрушка</label>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item-color">
         <legend class="form__heading">Цвет</legend>
         <input class="visually-hidden" type="checkbox" name="product-color" value="Белый" id="white-color" checked>
         <label class="form__label" for="white-color">Белый</label>
@@ -74,22 +77,28 @@
         <input class="visually-hidden" type="checkbox" name="product-color" value="Оранжевый" id="orange-color">
         <label class="form__label" for="orange-color">Оранжевый</label>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item-name">
         <legend class="form__heading">ФИО</legend>
-        <label class="form__label-top" for="first-name">Имя:</label>
-        <input class="form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
-        <label class="form__label-top" for="last-name">Фамилия:</label>
-        <input class="form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
-        <label class="form__label-top" for="middle-name">Отчество:</label>
-        <input class="form__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+        <div class="form__name-wrapper">
+          <label class="form__label" for="first-name">Имя:</label>
+          <input class="form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+        </div>
+        <div class="form__name-wrapper">
+          <label class="form__label" for="last-name">Фамилия:</label>
+          <input class="form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+        </div>
+        <div class="form__name-wrapper">
+          <label class="form__label" for="middle-name">Отчество:</label>
+          <input class="form__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+        </div>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item-tel">
         <legend class="form__heading">Тел</legend>
         <label class="visually-hidden" for="customer-tel">Телефон</label>
         <input class="form__field" type="tel" name="customer-tel" id="customer-tel"
           pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item-mail">
         <legend class="form__heading">E-mail</legend>
         <label class="visually-hidden" for="customer-email">Электронный адрес</label>
         <input class="form__field" type="email" name="customer-email" id="customer-email" placeholder="Ваш Email*" required>
@@ -100,14 +109,17 @@
         <textarea class="form__field form__field-comment" name="customer-comment" id="customer-comment"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
-      <p class="form__note">*Поля обязательны для заполнения</p>
-      <button class="form__button button" type="submit">Отправить заказ</button>
+      <div class="form__end">
+        <p class="form__note">*Поля обязательны для заполнения</p>
+        <button class="form__button button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
+
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта «Мишка">
+        <img src="img/mishka-logo-one.svg" alt="Логотип сайта «Мишка" width="102" height="34">
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
@@ -123,7 +135,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
+          <img src="img/htmlacademy-footer.svg" alt="Логотип HTML Academy" width="27" height="34">
         </a>
       </div>
     </div>
