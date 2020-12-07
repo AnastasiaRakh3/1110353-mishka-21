@@ -78,7 +78,6 @@
     grid-column: 1/3;
     grid-row: 2/3;
     display: block;
-    background-color: $color-bg;
   }
 }
 
@@ -100,9 +99,10 @@
   line-height: 24px;
   text-align: end;
   color: $color-text-head;
+  display: none;
 
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

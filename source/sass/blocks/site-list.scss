@@ -14,15 +14,15 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
-}
 
-.site-list--bg-color {
-  @media (min-width: $tablet-width) {
-    background-color: $color-bg;
-  }
+  &--bg-color {
+    @media (min-width: $tablet-width) {
+      background-color: $color-bg;
+    }
 
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
   }
 }
 

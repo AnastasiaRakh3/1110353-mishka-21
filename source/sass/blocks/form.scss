@@ -1,7 +1,10 @@
 .form {
-  @media (max-width: $mobile-width-only) {
-    padding-right: 30px;
-    padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -117,6 +120,10 @@
   line-height: 18px;
   color: $color-text-head;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .form__field-comment {
@@ -144,6 +151,11 @@
 .form__note {
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text-fontsize-2;
+    line-height: 30px;
+  }
 }
 
 .form__button {
