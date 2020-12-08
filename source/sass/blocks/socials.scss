@@ -1,7 +1,32 @@
 .socials {
   @include list-reset;
-  width: 142px;
-  height: 28px;
-  background-color: khaki;
-  border-bottom: 1px solid $color-decor2;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid $color-decor4;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    border-bottom: none;
+  }
+}
+
+.socials__item {
+  width: 22px;
+  height: 22px;
+  margin-right: 41px;
+  margin-bottom: 27px;
+  background-color: yellowgreen;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }

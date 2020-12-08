@@ -1,4 +1,20 @@
+.copyright {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .copyright__text {
+  margin-right: 27px;
   font-size: 19px;
   line-height: 18px;
+}
+
+.copyright__link img {
+  display: block;
 }

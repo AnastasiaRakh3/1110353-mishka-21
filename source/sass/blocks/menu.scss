@@ -1,15 +1,19 @@
 .menu {
   @include list-reset;
+  margin-top: 0;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 54px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -17,8 +21,7 @@
 
 .menu__link {
   display: block;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 24px 30px 31px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: $bold;
@@ -33,9 +36,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 25px 36px 22px 36px;
     font-size: $heading-fontsize-s2;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 37px 17px 37px;
   }
 }

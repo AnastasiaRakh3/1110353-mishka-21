@@ -1,14 +1,26 @@
+.about-us {
+  margin-bottom: 31px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
 .about-us__heading {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: $heading-fontsize-m1;
   font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
     font-size: $heading-fontsize-l2;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
     font-size: $heading-fontsize-l3;
     line-height: 57px;
   }
@@ -16,6 +28,8 @@
 
 .about-us__list {
   @include list-reset;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     column-count: 2;
@@ -29,12 +43,19 @@
 }
 
 .about-us__item {
+  padding-top: 56px;
+  padding-bottom: 27px;
   line-height: 20px;
   font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
     font-size: $heading-fontsize-s2;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
   }
 }
