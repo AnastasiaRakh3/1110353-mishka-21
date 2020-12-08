@@ -7,17 +7,20 @@
 .main-header--bg-color {
   display: flex;
   justify-content: center;
+  margin-bottom: 17px;
   padding-top: 73px;
   padding-bottom: 73px;
   background-color: $color-bg;
   background-image: none;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     padding-top: 56px;
     padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 98px;
     padding-top: 57px;
     padding-bottom: 55px;
   }
