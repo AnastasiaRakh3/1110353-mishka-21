@@ -16,14 +16,14 @@
           <img src="img/mishka-logo-one.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
         </a>
       </div>
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link " href="">Вязание на заказ</a>
+            <a class="site-list__link " href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="page-header__nav-extra extra-list">
@@ -96,12 +96,12 @@
       <div class="about-us__wrapper container">
         <h2 class="about-us__heading">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item about-us__item--love">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--wrap">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item about-us__item--ecology">Экологически <br> чистые материалы</li>
+          <li class="about-us__item about-us__item--style">Скандинавский стиль <br> по российской цене</li>
+          <li class="about-us__item about-us__item--likes">Увеличивает лайки <br> на фотографиях</li>
+          <li class="about-us__item about-us__item--love">Связано вручную <br> с любовью и умилением</li>
+          <li class="about-us__item about-us__item--support">Поддержка отечественного <br> производителя</li>
+          <li class="about-us__item about-us__item--wrap">Поставляется <br> в подарочной упаковке</li>
         </ul>
       </div>
     </section>
@@ -110,7 +110,7 @@
         <h2 class="reviews__heading">Отзывы</h2>
         <div class="reviews__list slider">
           <blockquote class="reviews__item slider__item slider__item--current">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как <br> у популярных инстамамочек. <br> В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author">
               <b class="reviews__author-name">Анастасия Красильникова</b>
               <span class="reviews__author-mail">@misssssiskras</span>
@@ -150,7 +150,7 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__name">адрес:</span>
-              <address class="contacts__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+              <address class="contacts__text">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</address>
             </li>
           </ul>
         </div>
@@ -198,6 +198,24 @@
       <button class="modal__button button" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script>
+    var nav = document.querySelector('.page-header__nav');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+
+    nav.classList.remove('page-header__nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (nav.classList.contains('page-header__nav--closed')) {
+        nav.classList.remove('page-header__nav--closed');
+        nav.classList.add('page-header__nav--opened');
+      } else {
+        nav.classList.remove('page-header__nav--opened');
+        nav.classList.add('page-header__nav--closed');
+      }
+    })
+  </script>
+
 </body>
 
 </html>
