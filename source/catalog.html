@@ -17,7 +17,7 @@
           <img src="img/mishka-logo-one.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
         </a>
       </div>
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list site-list--bg-color">
           <li class="site-list__item">
@@ -160,6 +160,23 @@
       <button class="modal__button button" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script>
+    var nav = document.querySelector('.page-header__nav');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+
+    nav.classList.remove('page-header__nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (nav.classList.contains('page-header__nav--closed')) {
+        nav.classList.remove('page-header__nav--closed');
+        nav.classList.add('page-header__nav--opened');
+      } else {
+        nav.classList.remove('page-header__nav--opened');
+        nav.classList.add('page-header__nav--closed');
+      }
+    })
+  </script>
 
 </body>
 
