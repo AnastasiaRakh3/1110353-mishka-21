@@ -32,3 +32,13 @@
     margin-bottom: 0;
   }
 }
+
+.products__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
