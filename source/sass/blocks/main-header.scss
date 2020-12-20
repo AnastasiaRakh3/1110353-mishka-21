@@ -1,7 +1,21 @@
 .main-header {
-  background-image: url("../../img/hero-mobile.png");
+  background-image: url("../../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top center;
+  background-size: 568px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero-desktop.jpg");
+    background-size: 1150px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-desktop@2x.jpg");
+    }
+  }
 }
 
 .main-header--bg-color {
@@ -31,6 +45,16 @@
   justify-content: center;
   padding-top: 73px;
   padding-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+    padding-bottom: 355px;
+  }
 }
 
 .main-header__heading {

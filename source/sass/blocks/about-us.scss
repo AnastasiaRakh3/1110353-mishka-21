@@ -43,6 +43,7 @@
 }
 
 .about-us__item {
+  position: relative;
   padding-top: 56px;
   padding-bottom: 27px;
   line-height: 20px;
@@ -57,5 +58,67 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 54px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--ecology {
+    &::before {
+      left: 8px;
+      width: 33px;
+      height: 38px;
+      background-image: url("../../img/about-us-ecology.svg");
+    }
+  }
+
+  &--style {
+    &::before {
+      left: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../../img/about-us-style.svg");
+    }
+  }
+
+  &--likes {
+    &::before {
+      left: 7px;
+      width: 34px;
+      height: 27px;
+      background-image: url("../../img/about-us-likes.svg");
+    }
+  }
+
+  &--love {
+    &::before {
+      left: 3px;
+      width: 35px;
+      height: 34px;
+      background-image: url("../../img/about-us-love.svg");
+    }
+  }
+
+  &--support {
+    &::before {
+      left: -6px;
+      width: 55px;
+      height: 23px;
+      background-image: url("../../img/about-us-support.svg");
+    }
+  }
+
+  &--wrap {
+    &::before {
+      left: 3px;
+      width: 33px;
+      height: 32px;
+      background-image: url("../../img/about-us-wrap.svg");
+    }
   }
 }

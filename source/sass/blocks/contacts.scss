@@ -16,17 +16,41 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 459px 527px;
     grid-template-rows: 1fr 52px;
+    padding-left: 64px;
   }
 }
 
 .contacts__header {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding-left: 110px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/contacts-flag.svg.svg");
+      background-repeat: initial;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 62px;
+      left: 0;
+    }
   }
 }
 
@@ -51,6 +75,8 @@
   @media (min-width: $desktop-width) {
     margin-top: 70px;
     margin-bottom: 34px;
+    padding-right: 0;
+    padding-left: 0;
     font-size: $heading-fontsize-l3;
     line-height: 57px;
   }
@@ -74,6 +100,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -136,7 +164,10 @@
   }
 }
 
-.contacts__map {
+.contacts__map-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
   margin-bottom: 41px;
 
   @media (min-width: $desktop-width) {
@@ -147,6 +178,40 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 145px;
+    width: 67px;
+    height: 100px;
+    background-image: url("../../img/map-pin.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 139px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 146px;
+    }
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 320px;
+  height: 454px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
   }
 }
 
@@ -164,6 +229,6 @@
     grid-column: 1/2;
     grid-row: 2/3;
     margin-right: 0;
-    margin-left: 50px;
+    margin-left: 110px;
   }
 }

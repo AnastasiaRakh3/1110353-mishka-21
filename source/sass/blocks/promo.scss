@@ -16,11 +16,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 52px;
-    padding-left: 225px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 73px;
+    padding-left: 225px;
   }
 }
 
@@ -143,7 +143,9 @@
   box-sizing: border-box;
 }
 
-.promo__img {
+.promo__img-wrapper {
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -154,6 +156,22 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -153px;
+  }
+}
+
+.promo__img {
+  display: block;
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
   }
 }
 
