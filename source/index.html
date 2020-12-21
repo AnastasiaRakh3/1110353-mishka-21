@@ -13,7 +13,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="header-logo" href="#!">
-          <img src="img/mishka-logo-one.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+          </picture>
         </a>
       </div>
       <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
@@ -84,7 +88,13 @@
               </tr>
             </table>
           </div>
-          <img class="promo__img" src="img/promo-mobile.png" width="260" height="315" alt="Вязаные корзинки">
+          <div class="promo__img-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/promo-desktop.jpg 1x, img/promo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+              <img class="promo__img" src="img/promo-mobile.jpg" srcset="img/promo-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+          </div>
           <div class="promo__buy">
             <span class="promo__price">Цена: 990 руб.</span>
             <a class="promo__button button" href="">Заказать</a>
@@ -150,11 +160,19 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__name">адрес:</span>
-              <address class="contacts__text">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</address>
+              <address class="contacts__text">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101
+              </address>
             </li>
           </ul>
         </div>
-        <img class="contacts__map" src="img/map-mobile.png" alt="Карта с локацией магазина" width="320" height="454">
+        <div class="contacts__map-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
+              alt="Карта с локацией магазина">
+          </picture>
+        </div>
         <a class="contacts__button button" href="">Напишите нам</a>
       </div>
     </section>
@@ -162,7 +180,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="#!">
-        <img src="img/mishka-logo-one.svg" alt="Логотип сайта «Мишка" width="101" height="74">
+        <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта «Мишка" width="102" height="34">
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">

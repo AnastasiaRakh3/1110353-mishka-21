@@ -20,6 +20,7 @@
 }
 
 .menu__link {
+  position: relative;
   display: block;
   padding: 24px 30px 31px 30px;
   font-size: 19px;
@@ -29,10 +30,43 @@
 
   &--interior {
     background-color: $color-main1;
+
+    &::after {
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../../img/menu-interior.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        width: 41px;
+      }
+    }
   }
 
   &--toys {
     background-color: $color-main2;
+
+    &::after {
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/menu-toy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 33px;
+        width: 61px;
+        height: 61px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 35px;
+        width: 60px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -41,7 +75,8 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 25px 37px 17px 37px;
+  &::after {
+    content: "";
+    position: absolute;
   }
 }

@@ -3,9 +3,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
-    background-image: url("../../img/review.png");
+    background-image: url("../../img/review.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -146,7 +151,26 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    background-color: yellowgreen;
+  }
+
+  &--prev {
+    background-image: url("../../img/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: 38px 13px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 19px 13px;
+    }
+  }
+
+  &--next {
+    background-image: url("../../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 38px top 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: 19px 13px;
   }
 }
 

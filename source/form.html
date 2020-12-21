@@ -14,7 +14,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="header-logo" href="index.html">
-          <img src="img/mishka-logo-one.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип сайта «Мишка»">
+          </picture>
         </a>
       </div>
       <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
@@ -124,7 +128,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="index.html">
-        <img src="img/mishka-logo-one.svg" alt="Логотип сайта «Мишка" width="102" height="34">
+        <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта «Мишка" width="102" height="34">
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
