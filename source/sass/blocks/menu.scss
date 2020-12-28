@@ -40,6 +40,14 @@
     line-height: 30px;
   }
 
+  &--interior {
+    background-color: $color-main1;
+  }
+
+  &--toys {
+    background-color: $color-main2;
+  }
+
   & span {
     display: block;
     margin-top: 24px;
@@ -50,12 +58,10 @@
       margin-bottom: 22px;
     }
   }
+}
 
+.menu__icon {
   &--interior {
-    background-color: $color-main1;
-  }
-
-  &--interior-icon {
     position: absolute;
     top: 23px;
     right: 36px;
@@ -67,10 +73,6 @@
   }
 
   &--toys {
-    background-color: $color-main2;
-  }
-
-  &--toys-icon {
     position: absolute;
     top: 21px;
     right: 27px;

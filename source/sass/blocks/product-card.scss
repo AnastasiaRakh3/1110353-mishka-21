@@ -112,10 +112,11 @@
 }
 
 .product-card__button {
-  width: 20px;
-  height: 19px;
   border: none;
-  background-image: url("../../img/cart-icon.svg");
-  background-repeat: no-repeat;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 18px;
+  }
 }
