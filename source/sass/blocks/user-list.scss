@@ -57,14 +57,10 @@
   }
 
   &--search {
-    &::before {
-      content: "";
+    &-icon {
       position: absolute;
       top: 5px;
       left: 2px;
-      width: 18px;
-      height: 18px;
-      background-image: url("../../img/search-icon.svg");
 
       @media (min-width: $tablet-width) {
         top: 36px;
@@ -74,14 +70,10 @@
   }
 
   &--cart {
-    &::before {
-      content: "";
+    &-icon {
       position: absolute;
       top: 3px;
       left: 0;
-      width: 21px;
-      height: 18px;
-      background-image: url("../../img/cart-icon.svg");
 
       @media (min-width: $tablet-width) {
         top: 35px;

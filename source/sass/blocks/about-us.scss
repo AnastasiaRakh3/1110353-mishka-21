@@ -60,65 +60,39 @@
     padding-bottom: 54px;
   }
 
-  &::before {
-    content: "";
+  &--ecology-icon {
     position: absolute;
     top: 0;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    left: 8px;
   }
 
-  &--ecology {
-    &::before {
-      left: 8px;
-      width: 33px;
-      height: 38px;
-      background-image: url("../../img/about-us-ecology.svg");
-    }
+  &--style-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-  &--style {
-    &::before {
-      left: 0;
-      width: 47px;
-      height: 27px;
-      background-image: url("../../img/about-us-style.svg");
-    }
+  &--likes-icon {
+    position: absolute;
+    top: 0;
+    left: 7px;
   }
 
-  &--likes {
-    &::before {
-      left: 7px;
-      width: 34px;
-      height: 27px;
-      background-image: url("../../img/about-us-likes.svg");
-    }
+  &--love-icon {
+    position: absolute;
+    top: 0;
+    left: 3px;
   }
 
-  &--love {
-    &::before {
-      left: 3px;
-      width: 35px;
-      height: 34px;
-      background-image: url("../../img/about-us-love.svg");
-    }
+  &--support-icon {
+    position: absolute;
+    top: 0;
+    left: -6px;
   }
 
-  &--support {
-    &::before {
-      left: -6px;
-      width: 55px;
-      height: 23px;
-      background-image: url("../../img/about-us-support.svg");
-    }
-  }
-
-  &--wrap {
-    &::before {
-      left: 3px;
-      width: 33px;
-      height: 32px;
-      background-image: url("../../img/about-us-wrap.svg");
-    }
+  &--wrap-icon {
+    position: absolute;
+    top: 0;
+    left: 3px;
   }
 }
