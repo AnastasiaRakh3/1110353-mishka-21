@@ -98,27 +98,6 @@
       padding-top: 50px;
       background-color: $color-bg;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 32px;
-      right: 0;
-      width: 25px;
-      height: 24px;
-      background-image: url("../../img/form-phone.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        top: 61px;
-        right: 50px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 225px;
-      }
-    }
   }
 
   &--mail {
@@ -128,27 +107,6 @@
       padding-top: 0;
       padding-bottom: 26px;
       background-color: $color-bg;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 41px;
-      right: 0;
-      width: 32px;
-      height: 21px;
-      background-image: url("../../img/form-mail.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        top: 16px;
-        right: 50px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 225px;
-      }
     }
   }
 
@@ -381,6 +339,40 @@ input:checked + .form__label--color::after {
     flex-direction: row;
     align-items: center;
     margin-bottom: 24px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+
+  &--tel {
+    top: 32px;
+    right: 0;
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 225px;
+    }
+  }
+
+  &--mail {
+    top: 41px;
+    right: 0;
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 225px;
+    }
   }
 }
 

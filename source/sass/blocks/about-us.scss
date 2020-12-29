@@ -59,39 +59,37 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 54px;
   }
+}
 
-  &--ecology-icon {
-    position: absolute;
+.about-us__icon {
+  position: absolute;
+
+  &--ecology {
     top: 0;
     left: 8px;
   }
 
-  &--style-icon {
-    position: absolute;
+  &--style {
     top: 0;
     left: 0;
   }
 
-  &--likes-icon {
-    position: absolute;
+  &--likes {
     top: 0;
     left: 7px;
   }
 
-  &--love-icon {
-    position: absolute;
+  &--love {
     top: 0;
     left: 3px;
   }
 
-  &--support-icon {
-    position: absolute;
+  &--support {
     top: 0;
     left: -6px;
   }
 
-  &--wrap-icon {
-    position: absolute;
+  &--wrap {
     top: 0;
     left: 3px;
   }

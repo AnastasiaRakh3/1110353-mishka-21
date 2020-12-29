@@ -55,32 +55,6 @@
     padding-left: 80px;
     line-height: 24px;
   }
-
-  &--search {
-    &-icon {
-      position: absolute;
-      top: 5px;
-      left: 2px;
-
-      @media (min-width: $tablet-width) {
-        top: 36px;
-        left: 33px;
-      }
-    }
-  }
-
-  &--cart {
-    &-icon {
-      position: absolute;
-      top: 3px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        top: 35px;
-        left: 31px;
-      }
-    }
-  }
 }
 
 .user-list__item:first-child .user-list__link {
@@ -88,5 +62,29 @@
     width: 82px;
     padding-left: 0;
     font-size: 0;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+
+  &--search {
+    top: 5px;
+    left: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: 36px;
+      left: 33px;
+    }
+  }
+
+  &--cart {
+    top: 3px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 35px;
+      left: 31px;
+    }
   }
 }
