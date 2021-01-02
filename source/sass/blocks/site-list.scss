@@ -8,11 +8,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    display: grid;
+    grid-template-columns: 235px 1fr;
+    width: 478px;
+    padding-left: 0;
   }
 
   &--bg-color {
@@ -29,64 +32,73 @@
 .site-list__item {
   padding-right: 30px;
   padding-left: 30px;
-  box-shadow: $box-shadow;
+  line-height: 24px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
-    margin-right: 27px;
+    margin-right: 15px;
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 0;
-    line-height: 24px;
-    box-shadow: none;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     margin-right: 0;
-    padding-right: 0;
-    padding-left: 0;
-    box-shadow: none;
+    padding-right: 35px;
+    border-right: solid 1px rgba(0, 0, 0, 0.1);
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
   }
 }
 
 .site-list__item:first-child {
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
 .site-list__item:nth-child(odd) {
   @media (min-width: $desktop-width) {
-    margin-left: 0;
     padding-left: 50px;
-    padding-right: 30px;
     border-right: solid 1px rgba(0, 0, 0, 0.1);
   }
 }
 
-.site-list__item:nth-child(2n) {
+.site-list__item:nth-child(even) {
   @media (min-width: $desktop-width) {
-    margin-right: 0;
-    padding-left: 35px;
+    padding-left: 36px;
+    border-right: none;
   }
 }
 
 .site-list__link {
-  padding-left: 46px;
-  line-height: 79px;
+  display: block;
+  padding: 27px 0 27px 46px;
+  line-height: 24px;
+
   font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding: 21px 0;
     font-size: $text-fontsize-1;
-    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
+    padding-top: 33px;
     padding-bottom: 31px;
     font-size: $text-fontsize-2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
