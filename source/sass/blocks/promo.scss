@@ -1,18 +1,17 @@
 .promo {
-  margin-bottom: 31px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 91px;
   }
 }
 
 .promo__wrapper {
   position: relative;
-  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 52px;
@@ -26,14 +25,14 @@
 
 .promo__heading {
   margin-top: 0;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   font-size: $heading-fontsize-m1;
   line-height: 30px;
   font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 37.5px;
     font-size: $heading-fontsize-l2;
     line-height: 50px;
   }
@@ -50,7 +49,7 @@
 
 .promo__note {
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   line-height: 20px;
   font-weight: $bold;
   text-transform: uppercase;
@@ -58,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 6px;
     right: 63px;
     width: 100px;
     line-height: 17px;
@@ -66,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 61px;
+    top: 69px;
     left: 82px;
   }
 }
@@ -94,7 +93,7 @@
 
 .promo__text {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   font-size: $text-fontsize-1;
   line-height: 24px;
 
@@ -105,7 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 51px;
   }
 }
 
@@ -132,10 +131,6 @@
   @media (min-width: $tablet-width) {
     padding-right: 29px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 27px;
-  }
 }
 
 .promo__description {
@@ -152,10 +147,12 @@
     grid-column: 2/3;
     grid-row: 1/3;
     margin-bottom: 0;
+    padding-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -153px;
+    padding-top: 0;
   }
 }
 
@@ -191,6 +188,7 @@
 }
 
 .promo__price {
+  align-self: center;
   margin-bottom: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -202,8 +200,11 @@
 }
 
 .promo__button {
+  margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     box-sizing: border-box;
+    font-size: $text-fontsize-2;
   }
 }

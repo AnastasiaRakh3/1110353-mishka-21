@@ -6,14 +6,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 54px;
+    margin-bottom: 89px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -21,6 +21,45 @@
 
 .menu__item {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -10px;
+      right: 0;
+      height: 10px;
+      background-repeat: repeat;
+      background-size: 20px 20px;
+      background-image: radial-gradient(circle at 10px -5px, $color-main1 12px, $color-origin 13px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      right: 0;
+      background-repeat: repeat;
+      height: 15px;
+      background-size: 40px 20px;
+      background-image: radial-gradient(circle at 10px 15px, $color-origin 12px, transparent 13px);
+    }
+
+    &--toys {
+      &::before {
+        background-image: radial-gradient(circle at 10px -5px, $color-main2 12px, $color-origin 13px);
+      }
+
+      &::after {
+        background-image: radial-gradient(circle at 10px 15px, $color-origin 12px, transparent 13px);
+      }
+    }
+  }
 }
 
 .menu__link {
@@ -57,6 +96,10 @@
       margin-top: 25px;
       margin-bottom: 22px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 17px;
+    }
   }
 }
 
@@ -78,7 +121,7 @@
     right: 27px;
 
     @media (min-width: $tablet-width) {
-      top: 33px;
+      top: 31px;
       right: 33px;
       width: 61px;
       height: 61px;
