@@ -29,8 +29,8 @@
 
 .user-list__item:first-child {
   @media (min-width: $tablet-width) {
-    width: 82px;
     flex-grow: 0;
+    width: 82px;
     padding-right: 0;
   }
 }
