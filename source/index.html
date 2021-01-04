@@ -125,6 +125,9 @@
           </div>
         </div>
       </div>
+      <svg class="promo__icon" width="320" height="6" aria-label="hidden">
+        <use xlink:href="img/sprite.svg#icon-zigzag-line"></use>
+      </svg>
     </section>
     <section class="about-us">
       <div class="about-us__wrapper container">
@@ -203,17 +206,31 @@
             </blockquote>
           </div>
           <div class="reviews__toggles">
-            <button class="reviews__toggle reviews__toggle--prev" type="button" aria-label="Предыдущий отзыв"></button>
-            <button class="reviews__toggle reviews__toggle--next" type="button" aria-label="Следующий отзыв"></button>
+            <button class="reviews__toggle" type="button" aria-label="Предыдущий отзыв">
+              <svg class="reviews__icon reviews__icon--prev" width="50" height="26" aria-label="hidden">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="reviews__toggle" type="button" aria-label="Следующий отзыв">
+              <svg class="reviews__icon reviews__icon--next" width="50" height="26" aria-label="hidden">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <a class="reviews__button button" href="">Написать</a>
       </div>
+      <svg class="promo__icon" width="320" height="6" aria-label="hidden">
+        <use xlink:href="img/sprite.svg#icon-zigzag-line"></use>
+      </svg>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__header">
           <h2 class="contacts__heading">Контакты</h2>
+          <svg class="contacts__flag" width="47" height="81" aria-label="hidden">
+            <use xlink:href="img/sprite.svg#icon-flag"></use>
+          </svg>
           <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__name">e-mail:</span>
@@ -236,6 +253,9 @@
             <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
               alt="Карта с локацией магазина">
           </picture>
+          <svg class="contacts__map-pin" width="67" height="100" aria-label="hidden">
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
         </div>
         <a class="contacts__button button" href="">Напишите нам</a>
       </div>
@@ -270,7 +290,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon" width="27" height="34" role="img" aria-label="Логотип HTML Academy">
             <use xlink:href="img/sprite.svg#icon-copyright"></use>
@@ -285,7 +305,7 @@
     <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="modal__description">Выберите размер:</p>
       <div class="modal__sizes">
-        <label class="modal__label" for="product-size-s">s</label>
+        <label class="modal__label modal__label--active" for="product-size-s">s</label>
         <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
         <label class="modal__label" for="product-size-m">m</label>
         <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
@@ -312,6 +332,8 @@
       }
     })
   </script>
+
+  <script src="js/script.js"></script>
 
 </body>
 

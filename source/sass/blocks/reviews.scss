@@ -1,8 +1,8 @@
 .reviews {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 67px;
     background-image: url("../../img/review.jpg");
     background-repeat: no-repeat;
     background-position: top left;
@@ -120,36 +120,33 @@
   display: flex;
   flex-direction: column;
   font-style: normal;
+  color: $color-text-head;
 }
 
 .reviews__author-name {
   margin-bottom: 3px;
-  color: $color-text-head;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 7px;
-    font-size: 18px;
+    font-size: $heading-fontsize-s1;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 3px;
-    font-size: 17px;
+    font-size: $text-fontsize-2;
     line-height: 30px;
   }
 }
 
 .reviews__author-mail {
   line-height: 27px;
-  color: $color-text-head;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 17px;
     line-height: 27px;
   }
 }
@@ -173,6 +170,7 @@
 }
 
 .reviews__toggle {
+  // display: flex;
   height: 52px;
   padding: 0;
   background-color: transparent;
@@ -181,30 +179,48 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
-
-  &--prev {
-    background-image: url("../../img/arrow-left.svg");
-    background-repeat: no-repeat;
-    background-position: 37px 13px;
-
-    @media (min-width: $tablet-width) {
-      background-position: 19px 13px;
-    }
-  }
-
-  &--next {
-    background-image: url("../../img/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: right 40px top 13px;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-position: 19px 13px;
-  }
 }
 
 .reviews__toggle:first-child {
   border-right: none;
+}
+
+.reviews__icon {
+  &--prev {
+    // margin-top: 13px;
+    // margin-left: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    // margin-top: 13px;
+    // margin-left: 19px;
+  }
+
+  &--next {
+    // justify-content: flex-end;
+    // margin-top: 13px;
+    // margin-right: 40px;
+    // margin-left: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    // margin-top: 13px;
+    // margin-right: 19px;
+  }
+}
+
+// Не работает с svg fill и outline: none;
+
+.reviews__icon:hover {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+    fill: blue;
+  }
 }
 
 .reviews__button {
