@@ -1,10 +1,12 @@
 .form {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 17px 30px 55px 30px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 54px 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98.5px;
   }
 }
 
@@ -412,14 +414,12 @@ input:checked + .form__label--color::after {
 .form__end {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
     padding-right: 50px;
     padding-left: 50px;
   }

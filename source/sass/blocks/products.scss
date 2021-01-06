@@ -1,23 +1,25 @@
 .products {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66.5px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
+    padding-top: 112px;
   }
 }
 
 .products__list {
   @include list-reset;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 67px;
-  }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 52px;
-    margin-top: 111px;
+    grid-template-columns: 316px 315px 316px;
+    gap: 51.5px;
   }
 }
 

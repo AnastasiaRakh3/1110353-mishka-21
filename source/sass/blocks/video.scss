@@ -15,6 +15,11 @@
   flex-direction: column;
   border: 1px solid $color-decor3;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    overflow: hidden;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 683px 367px;
@@ -26,11 +31,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 41px 42px 46px;
+    padding: 40px 40px 46px;
+    border: 1px solid $color-decor3;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 36px 60px 78px;
+    padding: 96px 56px 60px 78px;
   }
 }
 
@@ -39,7 +45,7 @@
   order: -2;
   margin-top: 0;
   margin-bottom: 26.5px;
-  padding: 21.5px 13px 0 91px;
+  padding: 21.5px 13px 0 90px;
   font-size: $text-fontsize-2;
   line-height: 24px;
   font-weight: $bold;
@@ -47,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24.5px;
-    padding: 0 41px 0 65px;
+    padding: 0 41px 0 66px;
     font-size: $heading-fontsize-s2;
 
     br {
@@ -71,7 +77,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 0;
+      top: -2px;
       left: 0;
     }
 
@@ -85,7 +91,7 @@
 .video__description {
   margin-top: 0;
   margin-bottom: 41px;
-  padding: 0 10px 0 34px;
+  padding: 36px 10px 0 34px;
   font-size: 13px;
   line-height: 24px;
 
@@ -97,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51.5px;
+    margin-bottom: 52px;
   }
 }
 
@@ -117,41 +123,46 @@
   order: -1;
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 0 -9px 0 -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .video__watch {
   display: block;
+  margin-bottom: -22px;
   // width: 260px;
   // height: 150px;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 668px;
-  //   height: 455px;
-  // }
+  @media (min-width: $tablet-width) {
+    // width: 668px;
+    // height: 455px;
+    margin-bottom: 0;
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 683px;
-  //   height: 455px;
-  // }
+  @media (min-width: $desktop-width) {
+    //   width: 683px;
+    //   height: 455px;
+  }
 }
 
 .video__button-play {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  align-self: center;
   width: 101px;
   height: 77px;
+  padding: 0;
   background-color: transparent;
   background-image: url("../../img/button-play.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     width: 102px;
@@ -161,5 +172,16 @@
   @media (min-width: $desktop-width) {
     width: 101px;
     height: 77px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+    outline: none;
   }
 }
