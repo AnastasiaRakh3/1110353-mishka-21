@@ -18,6 +18,10 @@
       background-image: url("../../img/hero-desktop@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -66px;
+  }
 }
 
 .main-header--bg-color {
@@ -61,11 +65,20 @@
 .main-header__wrapper {
   display: flex;
   justify-content: center;
+  min-height: 281px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 627px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 628px;
+  }
 }
 
 .main-header__heading {
   margin-top: 73px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   font-weight: $bold;
   font-size: $heading-fontsize-l1;
   line-height: 30px;
@@ -75,7 +88,7 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-top: 156px;
-    margin-bottom: 372px;
+    margin-bottom: 50px;
     font-size: $heading-fontsize-l2;
     line-height: 50px;
     text-indent: -10px;
@@ -83,8 +96,8 @@
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin-top: 160px;
-    margin-bottom: 355px;
+    margin-top: 159px;
+    margin-bottom: 57px;
     font-size: $heading-fontsize-l3;
     line-height: 57px;
     text-indent: 0;
