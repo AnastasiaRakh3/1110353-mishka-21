@@ -90,7 +90,7 @@
             <p class="product-card__description">Рост 30 см, вес 200 г</p>
             <div class="product-card__buy">
               <span class="product-card__price">1 200 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину">
+              <button class="product-card__button modal-btn" type="button" aria-label="Добавить в корзину">
                 <svg class="product-card__icon" width="20" height="19" aria-label="hidden">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -122,7 +122,7 @@
             <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
             <div class="product-card__buy">
               <span class="product-card__price">690 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину">
+              <button class="product-card__button modal-btn" type="button" aria-label="Добавить в корзину">
                 <svg class="product-card__icon" width="20" height="19" aria-label="hidden">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -153,7 +153,7 @@
             <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
             <div class="product-card__buy">
               <span class="product-card__price">1 500 руб.</span>
-              <button class="product-card__button" type="button" aria-label="Добавить в корзину">
+              <button class="product-card__button modal-btn" type="button" aria-label="Добавить в корзину">
                 <svg class="product-card__icon" width="20" height="19" aria-label="hidden">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -224,11 +224,11 @@
       <p class="modal__description">Выберите размер:</p>
       <div class="modal__sizes">
         <label class="modal__label modal__label--active" for="product-size-s">s</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
+        <input class="visually-hidden" type="radio" name="product-size" value="s" id="product-size-s" checked>
         <label class="modal__label" for="product-size-m">m</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
+        <input class="visually-hidden" type="radio" name="product-size" value="m" id="product-size-m">
         <label class="modal__label" for="product-size-l">l</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-l" id="product-size-l">
+        <input class="visually-hidden" type="radio" name="product-size" value="l" id="product-size-l">
       </div>
       <button class="modal__button button" type="submit">Добавить</button>
     </form>
@@ -250,6 +250,8 @@
       }
     })
   </script>
+
+<script src="js/script.js"></script>
 
 </body>
 
