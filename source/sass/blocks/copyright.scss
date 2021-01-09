@@ -17,4 +17,14 @@
 
 .copyright__link {
   line-height: 0;
+  fill: $color-main1;
+
+  &:hover {
+    fill: $color-footer;
+  }
+
+  &:active {
+    fill: $color-footer;
+    opacity: 0.3;
+  }
 }

@@ -21,7 +21,7 @@
           </picture>
         </a>
       </div>
-      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs"><!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
@@ -232,7 +232,7 @@
           </ul>
         </div>
         <div class="contacts__map-wrapper">
-          <picture>
+          <!-- <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
@@ -243,7 +243,8 @@
           </picture>
           <svg class="contacts__map-pin" width="67" height="100" aria-label="hidden">
             <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-          </svg>
+          </svg> -->
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3084932233467!2d30.322567283333694!3d59.93849747624844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563369028326!5m2!1sru!2sru" allowfullscreen=""></iframe>
         </div>
         <a class="contacts__button button" href="page2.html">Напишите нам</a>
       </div>
@@ -252,26 +253,28 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="#!">
-        <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта «Мишка" width="102" height="34">
+        <svg class="footer-logo__icon" width="102" height="34" role="img" aria-label="Логотип сайта «Мишка">
+          <use xlink:href="img/mishka-logo-mobile.svg#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--instagram" href="" aria-label="Перейти в Инстаграм">
-            <svg class="socials__icon socials__icon--instagram" width="22" height="22" aria-hidden="true">
+            <svg width="22" height="22" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--facebook" href="" aria-label="Перейти в Фейсбук">
-            <svg class="socials__icon socials__icon--facebook" width="15" height="28" aria-hidden="true">
+            <svg width="15" height="28" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--twitter" href="" aria-label="Перейти в Твиттер">
-            <svg class="socials__icon socials__icon--twitter" width="23" height="20" aria-hidden="true">
+            <svg width="23" height="20" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -280,7 +283,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon" width="27" height="34" role="img" aria-label="Логотип HTML Academy">
+          <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy">
             <use xlink:href="img/sprite.svg#icon-copyright"></use>
           </svg>
         </a>
@@ -305,23 +308,6 @@
       </form>
     </div>
   </section>
-
-  <script>
-    var nav = document.querySelector('.page-header__nav');
-    var navToggle = document.querySelector('.page-header__nav-toggle');
-
-    nav.classList.remove('page-header__nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (nav.classList.contains('page-header__nav--closed')) {
-        nav.classList.remove('page-header__nav--closed');
-        nav.classList.add('page-header__nav--opened');
-      } else {
-        nav.classList.remove('page-header__nav--opened');
-        nav.classList.add('page-header__nav--closed');
-      }
-    })
-  </script>
 
   <script src="js/script.js"></script>
 

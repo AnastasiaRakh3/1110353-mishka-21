@@ -1,8 +1,24 @@
+const nav = document.querySelector('.page-header__nav');
+const navToggle = document.querySelector('.page-header__nav-toggle');
+
 const modalWrapper = document.querySelector(".modal");
 const modalBtnPromo = document.querySelector(".modal-btn-promo");
 const modalBtnCatalog = document.querySelector(".modal-btn-catalog");
 const modalPromo = document.querySelector(".modal__item--promo");
 const modalCatalog = document.querySelector(".modal__item--catalog");
+
+
+nav.classList.remove('page-header__nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  if (nav.classList.contains('page-header__nav--closed')) {
+    nav.classList.remove('page-header__nav--closed');
+    nav.classList.add('page-header__nav--opened');
+  } else {
+    nav.classList.remove('page-header__nav--opened');
+    nav.classList.add('page-header__nav--closed');
+  }
+})
 
 modalBtnPromo.addEventListener("click", function (evt) {
   evt.preventDefault();

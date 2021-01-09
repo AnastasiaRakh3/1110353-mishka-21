@@ -379,11 +379,11 @@ input:checked + .form__label--color::after {
 
 .form__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--tel {
     top: 23px;
     right: 7px;
-    opacity: 0.2;
 
     @media (min-width: $tablet-width) {
       top: 61px;
@@ -398,7 +398,6 @@ input:checked + .form__label--color::after {
   &--mail {
     top: 28px;
     right: 3px;
-    opacity: 0.2;
 
     @media (min-width: $tablet-width) {
       top: 41px;
@@ -409,6 +408,24 @@ input:checked + .form__label--color::after {
       right: 229px;
     }
   }
+
+  // &:hover {
+  //   fill: $color-decor1;
+  // }
+
+  // &:active {
+  //   fill: $color-decor1;
+  // }
+}
+
+.form__field--tel:hover .form__icon--tel,
+.form__field--tel:active .form__icon--tel {
+  fill: $color-decor1;
+}
+
+.form__field--mail:hover .form__icon--mail,
+.form__field--mail:active .form__icon--mail {
+  fill: $color-decor1;
 }
 
 .form__end {
