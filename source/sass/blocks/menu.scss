@@ -120,5 +120,7 @@
 }
 
 .menu__link:hover {
-  top: -5px;
+  @media (min-width: $desktop-width) {
+    top: -5px;
+  }
 }

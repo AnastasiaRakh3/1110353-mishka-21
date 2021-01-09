@@ -121,7 +121,7 @@
           </div>
           <div class="promo__buy">
             <span class="promo__price">Цена: 990 руб.</span>
-            <a class="promo__button button modal-btn" href="">Заказать</a>
+            <a class="promo__button button modal-btn-promo" href="">Заказать</a>
           </div>
         </div>
       </div>
@@ -209,7 +209,7 @@
             </button>
           </div>
         </div>
-        <a class="reviews__button button" href="">Написать</a>
+        <a class="reviews__button button" href="page1.html">Написать</a>
       </div>
     </section>
     <section class="contacts">
@@ -245,7 +245,7 @@
             <use xlink:href="img/sprite.svg#icon-map-pin"></use>
           </svg>
         </div>
-        <a class="contacts__button button" href="">Напишите нам</a>
+        <a class="contacts__button button" href="page2.html">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -289,19 +289,21 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__heading">Добавить в корзину</h2>
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
-      <p class="modal__description">Выберите размер:</p>
-      <div class="modal__sizes">
-        <label class="modal__label modal__label--active" for="product-size-s">s</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="s" id="product-size-s" checked>
-        <label class="modal__label" for="product-size-m">m</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="m" id="product-size-m">
-        <label class="modal__label" for="product-size-l">l</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="l" id="product-size-l">
-      </div>
-      <button class="modal__button button" type="submit">Добавить</button>
-    </form>
+    <div class="modal__item modal__item--promo">
+      <h2 class="modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <p class="modal__description">Выберите размер:</p>
+        <div class="modal__sizes">
+          <label class="modal__label modal__label--active" for="product-size-s">s</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="s" id="product-size-s" checked>
+          <label class="modal__label" for="product-size-m">m</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="m" id="product-size-m">
+          <label class="modal__label" for="product-size-l">l</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="l" id="product-size-l">
+        </div>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 
   <script>
