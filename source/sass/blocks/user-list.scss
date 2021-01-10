@@ -30,7 +30,6 @@
 .user-list__item:first-child {
   @media (min-width: $tablet-width) {
     flex-grow: 0;
-    width: 82px;
     padding-right: 0;
   }
 }
@@ -52,6 +51,7 @@
 
 .user-list__item:first-child .user-list__link {
   @media (min-width: $tablet-width) {
+    width: 82px;
     padding-left: 0;
     font-size: 0;
   }

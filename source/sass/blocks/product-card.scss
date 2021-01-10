@@ -142,6 +142,15 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
   }
+
+  &:hover {
+    fill: $color-main1;
+  }
+
+  &:active {
+    fill: $color-main1;
+    opacity: 0.3;
+  }
 }
 
 .product-card:nth-child(2) {

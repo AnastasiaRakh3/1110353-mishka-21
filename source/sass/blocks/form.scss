@@ -408,23 +408,12 @@ input:checked + .form__label--color::after {
       right: 229px;
     }
   }
-
-  // &:hover {
-  //   fill: $color-decor1;
-  // }
-
-  // &:active {
-  //   fill: $color-decor1;
-  // }
 }
 
-.form__field--tel:hover .form__icon--tel,
-.form__field--tel:active .form__icon--tel {
-  fill: $color-decor1;
-}
-
-.form__field--mail:hover .form__icon--mail,
-.form__field--mail:active .form__icon--mail {
+.form__field--tel:hover + .form__icon--tel,
+.form__field--tel:active + .form__icon--tel,
+.form__field--mail:hover + .form__icon--mail,
+.form__field--mail:active + .form__icon--mail {
   fill: $color-decor1;
 }
 
@@ -469,6 +458,11 @@ input:checked + .form__label--color::after {
   }
 }
 
+.form__field:hover,
+.form__field:active {
+  border-color: $color-decor1;
+}
+
 .form__label--type,
 .form__label--color {
   &:hover::before {
@@ -480,7 +474,13 @@ input:checked + .form__label--color::after {
   }
 }
 
-.form__field:hover,
-.form__field:active {
+.form__field--type:focus + .form__label--type::before,
+.form__field--color:focus + .form__label--color::before {
   border-color: $color-decor1;
+}
+
+.form__field--type:disabled + .form__label--type::before,
+.form__field--color:disabled + .form__label--color::before {
+  border-color: $color-decor4;
+  background-color: $color-decor4;
 }

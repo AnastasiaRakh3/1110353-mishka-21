@@ -20,25 +20,25 @@ navToggle.addEventListener('click', function () {
   }
 })
 
-modalBtnPromo.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalPromo.classList.add("modal__item--show");
-  modalWrapper.classList.add("modal--show");
-});
+  modalBtnPromo.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalPromo.classList.add("modal__item--show");
+    modalWrapper.classList.add("modal--show");
+  });
 
-modalBtnCatalog.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalCatalog.classList.add("modal__item--show");
-  modalWrapper.classList.add("modal--show");
-});
+  modalBtnCatalog.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalCatalog.classList.add("modal__item--show");
+    modalWrapper.classList.add("modal--show");
+  });
 
-modalWrapper.addEventListener("click", function () {
-  if (modalPromo.classList.contains("modal__item--show") || modalCatalog.classList.contains("modal__item--show")) {
-    modalPromo.classList.remove("modal__item--show");
-    modalCatalog.classList.remove("modal__item--show");
-    modalWrapper.classList.remove("modal--show");
-  }
-});
+  modalWrapper.addEventListener("click", function () {
+    if (modalPromo.classList.contains("modal__item--show") || modalCatalog.classList.contains("modal__item--show")) {
+      modalPromo.classList.remove("modal__item--show");
+      modalCatalog.classList.remove("modal__item--show");
+      modalWrapper.classList.remove("modal--show");
+    }
+  });
 
 const slides = document.querySelectorAll(".slider__item");
 let current = 0;
