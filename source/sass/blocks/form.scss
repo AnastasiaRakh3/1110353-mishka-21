@@ -417,6 +417,13 @@ input:checked + .form__label--color::after {
   fill: $color-decor1;
 }
 
+.form__field--name:focus,
+.form__field--tel:focus,
+.form__field--mail:focus,
+.form__field--comment:focus {
+  outline: none;
+}
+
 .form__end {
   display: flex;
   flex-direction: column;
@@ -474,13 +481,13 @@ input:checked + .form__label--color::after {
   }
 }
 
-.form__field--type:focus + .form__label--type::before,
-.form__field--color:focus + .form__label--color::before {
+input:focus + .form__label--type::before,
+input:focus + .form__label--color::before {
   border-color: $color-decor1;
 }
 
-.form__field--type:disabled + .form__label--type::before,
-.form__field--color:disabled + .form__label--color::before {
+input:focus:disabled + .form__label--type::before,
+input:focus:disabled + .form__label--color::before {
   border-color: $color-decor4;
   background-color: $color-decor4;
 }

@@ -15,8 +15,6 @@
   }
 }
 
-.footer-logo__underline {
-  @media (min-width: 768px) {
-    display: none;
-  }
+.footer-logo__icon {
+  display: block;
 }
