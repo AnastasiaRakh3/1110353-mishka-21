@@ -58,13 +58,11 @@
 }
 
 .user-list__link:hover .user-list__text {
-  &:hover {
-    opacity: 0.6;
-  }
+  opacity: 0.6;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.user-list__link:active .user-list__text {
+  opacity: 0.3;
 }
 
 .user-list__icon {

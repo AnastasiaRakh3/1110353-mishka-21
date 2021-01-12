@@ -6,13 +6,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
     padding-bottom: 84px;
-    background-image: url("../../img/review.jpg");
+    background-image: url("../../img/background/review.jpg");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 350px 457px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../../img/background/review@2x.jpg");
     }
   }
 
