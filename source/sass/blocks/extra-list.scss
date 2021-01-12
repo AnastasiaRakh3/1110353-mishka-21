@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 20px;
     padding-left: 50px;
 
     &--bg-color {
@@ -16,14 +15,25 @@
   }
 
   .extra-list__item {
-    margin-right: 60px;
+    margin-right: 62px;
     line-height: 24px;
   }
 
   .extra-list__link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: $text-fontsize-1;
     line-height: 24px;
     font-weight: $bold;
     color: $color-text-head;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

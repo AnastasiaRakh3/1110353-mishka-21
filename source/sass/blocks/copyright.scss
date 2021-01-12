@@ -2,7 +2,7 @@
   align-self: center;
   display: flex;
   align-items: center;
-  margin-top: 27px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -13,4 +13,18 @@
   margin-right: 27px;
   font-size: 19px;
   line-height: 18px;
+}
+
+.copyright__link {
+  line-height: 0;
+  fill: $color-main1;
+
+  &:hover {
+    fill: $color-footer;
+  }
+
+  &:active {
+    fill: $color-footer;
+    opacity: 0.3;
+  }
 }

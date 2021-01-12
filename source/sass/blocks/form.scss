@@ -1,16 +1,18 @@
 .form {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 17px 30px 55px 30px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 54px 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98.5px;
   }
 }
 
 .form__intro {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 37px;
   font-size: 13px;
   line-height: 24px;
 
@@ -23,8 +25,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
     padding-right: 240px;
-    padding-left: 255px;
+    padding-left: 225px;
   }
 }
 
@@ -41,20 +44,21 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;
-    padding-left: 225px;
+    padding-left: 217px;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 225px;
+    padding-left: 225px;
   }
 
   &--type {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 37px;
+    padding-bottom: 28px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 26px;
+      padding-top: 28px;
       padding-bottom: 26px;
     }
 
@@ -65,58 +69,72 @@
   }
 
   &--color {
-    padding-top: 41px;
-    padding-bottom: 10px;
+    padding-top: 32px;
+    padding-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: 260px 1fr;
+      grid-template-columns: 261px 1fr;
+      padding-top: 51px;
+      padding-bottom: 28px;
       background-color: $color-bg;
     }
 
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 262px 263px 1fr;
+      padding-top: 49px;
       padding-right: 50px;
     }
   }
 
   &--name {
-    padding-top: 44px;
-    padding-bottom: 13px;
+    padding-top: 38px;
+    padding-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;
-      padding-bottom: 24px;
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
     }
   }
 
   &--tel {
-    padding-top: 21px;
+    padding-top: 12px;
+    padding-bottom: 43px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 50px;
+      padding-top: 49px;
+      padding-bottom: 0;
       background-color: $color-bg;
     }
   }
 
   &--mail {
-    padding-top: 21px;
+    padding-top: 12px;
+    padding-bottom: 42px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
-      padding-bottom: 26px;
+      padding-top: 25px;
+      padding-bottom: 50px;
       background-color: $color-bg;
     }
   }
 
   &--comment {
     margin-bottom: 17px;
-    padding-top: 38px;
+    padding-top: 30px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 53px;
+      margin-bottom: 54px;
       padding-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 49px;
     }
   }
 }
@@ -124,7 +142,7 @@
 .form__heading {
   position: absolute;
   top: -8px;
-  padding-right: 10px;
+  padding-right: 22px;
   line-height: 16px;
   font-weight: $bold;
   text-transform: uppercase;
@@ -137,16 +155,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 97px;
+    left: 112px;
   }
 
   &--type {
     @media (min-width: $tablet-width) {
-      top: 48px;
+      top: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 45px;
+      top: 43px;
     }
   }
 
@@ -170,9 +188,21 @@
     }
   }
 
+  &--tel {
+    @media (min-width: $tablet-width) {
+      top: 65px;
+    }
+  }
+
+  &--mail {
+    @media (min-width: $tablet-width) {
+      top: 43px;
+    }
+  }
+
   &--comment {
     @media (min-width: $tablet-width) {
-      top: 69px;
+      top: 70px;
     }
   }
 }
@@ -190,24 +220,25 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 24px;
+      margin-bottom: 25px;
+      margin-left: 2px;
     }
 
     &::before {
       content: "";
       flex-shrink: 0;
-      width: 38px;
-      height: 38px;
+      width: 36px;
+      height: 36px;
       margin-right: 19px;
       border-radius: 50%;
       border: solid 2px $color-text-general;
 
       @media (min-width: $tablet-width) {
-        width: 48px;
-        height: 48px;
+        width: 46px;
+        height: 46px;
         margin-right: 26px;
       }
 
@@ -240,7 +271,7 @@
 
   &--name {
     @media (min-width: $tablet-width) {
-      margin-right: 20px;
+      margin-right: 25px;
       border-bottom: solid 2px transparent;
     }
   }
@@ -251,16 +282,16 @@ input:checked + .form__label--type::after {
   position: absolute;
   top: 12px;
   left: 12px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: $color-decor1;
 
   @media (min-width: $tablet-width) {
     top: 15px;
     left: 15px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -284,6 +315,9 @@ input:checked + .form__label--color::after {
 }
 
 .form__field {
+  padding: 0;
+  color: $color-text-general;
+
   &::placeholder {
     font-size: $text-fontsize-2;
     color: $color-text-head;
@@ -295,11 +329,12 @@ input:checked + .form__label--color::after {
   }
 
   &--name {
-    line-height: 50px;
+    line-height: 48px;
     border-top: none;
     border-right: none;
     border-bottom: solid 2px $color-text-general;
     border-left: none;
+    background-color: transparent;
 
     @media (min-width: $tablet-width) {
       flex-grow: 1;
@@ -309,7 +344,6 @@ input:checked + .form__label--color::after {
 
   &--tel,
   &--mail {
-    margin-bottom: 34px;
     line-height: 50px;
     border-top: none;
     border-right: none;
@@ -318,75 +352,87 @@ input:checked + .form__label--color::after {
     background-color: transparent;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 24px;
       padding-left: 18px;
     }
   }
 
   &--comment {
     min-height: 108px;
-    padding: 17px;
+    padding: 15px;
+    line-height: 19px;
     resize: none;
+    border: solid 2px $color-text-general;
   }
 }
 
 .form__name-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 }
 
 .form__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--tel {
-    top: 32px;
-    right: 0;
-    opacity: 0.2;
+    top: 23px;
+    right: 7px;
 
     @media (min-width: $tablet-width) {
-      top: 60px;
-      right: 50px;
+      top: 61px;
+      right: 76px;
     }
 
     @media (min-width: $desktop-width) {
-      right: 225px;
+      right: 233px;
     }
   }
 
   &--mail {
-    top: 41px;
-    right: 0;
-    opacity: 0.2;
+    top: 28px;
+    right: 3px;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
-      right: 50px;
+      top: 41px;
+      right: 72px;
     }
 
     @media (min-width: $desktop-width) {
-      right: 225px;
+      right: 229px;
     }
   }
+}
+
+.form__field--tel:hover + .form__icon--tel,
+.form__field--tel:active + .form__icon--tel,
+.form__field--mail:hover + .form__icon--mail,
+.form__field--mail:active + .form__icon--mail {
+  fill: $color-decor1;
+}
+
+.form__field--name:focus,
+.form__field--tel:focus,
+.form__field--mail:focus,
+.form__field--comment:focus {
+  outline: none;
 }
 
 .form__end {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -399,7 +445,7 @@ input:checked + .form__label--color::after {
 
 .form__note {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-size: 14px;
   line-height: 16px;
 
@@ -411,8 +457,37 @@ input:checked + .form__label--color::after {
 }
 
 .form__button {
+  font-size: $text-fontsize-2;
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 230px;
   }
+}
+
+.form__field:hover,
+.form__field:active {
+  border-color: $color-decor1;
+}
+
+.form__label--type,
+.form__label--color {
+  &:hover::before {
+    border-color: $color-decor1;
+  }
+
+  &:active::before {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+input:focus + .form__label--type::before,
+input:focus + .form__label--color::before {
+  border-color: $color-decor1;
+}
+
+input:focus:disabled + .form__label--type::before,
+input:focus:disabled + .form__label--color::before {
+  border-color: $color-decor4;
+  background-color: $color-decor4;
 }

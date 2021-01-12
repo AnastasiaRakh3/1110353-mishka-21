@@ -1,29 +1,27 @@
 .user-list {
   @include list-reset;
+  flex-direction: column;
   margin-top: 0;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-content: flex-end;
   }
 }
 
 .user-list__item {
-  min-height: 79px;
   padding-right: 30px;
   padding-left: 30px;
-  box-shadow: $box-shadow;
+  line-height: 24px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     display: flex;
-    padding-right: 0;
+    padding-right: 50px;
     padding-left: 0;
-    box-shadow: none;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
     border-left: solid 1px rgba(0, 0, 0, 0.1);
   }
@@ -31,28 +29,22 @@
 
 .user-list__item:first-child {
   @media (min-width: $tablet-width) {
-    width: 82px;
-  }
-}
-
-.user-list__item:last-child {
-  @media (min-width: $tablet-width) {
-    padding-right: 50px;
+    flex-grow: 0;
+    padding-right: 0;
   }
 }
 
 .user-list__link {
   position: relative;
+  display: block;
   align-items: center;
-  padding-left: 46px;
-  line-height: 79px;
+  padding: 27px 0 27px 46px;
+  line-height: 24px;
   font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
-    padding-top: 32px;
-    padding-bottom: 31px;
-    padding-left: 80px;
+    padding: 33px 0 30px 82px;
     line-height: 24px;
   }
 }
@@ -65,11 +57,22 @@
   }
 }
 
+.user-list__link:hover .user-list__text {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .user-list__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--search {
-    top: 5px;
+    top: 31px;
     left: 2px;
 
     @media (min-width: $tablet-width) {
@@ -79,7 +82,7 @@
   }
 
   &--cart {
-    top: 3px;
+    top: 30px;
     left: 0;
 
     @media (min-width: $tablet-width) {
@@ -87,4 +90,13 @@
       left: 31px;
     }
   }
+}
+
+.user-list__link:hover .user-list__icon {
+  fill: $color-main1;
+}
+
+.user-list__link:active .user-list__icon {
+  fill: $color-main1;
+  opacity: 0.3;
 }

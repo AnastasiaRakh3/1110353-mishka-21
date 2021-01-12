@@ -4,8 +4,17 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  &:hover {
+    fill: $color-footer;
+  }
+
+  &:active {
+    fill: $color-footer;
+    opacity: 0.3;
+  }
 }
 
-.footer-logo img {
+.footer-logo__icon {
   display: block;
 }

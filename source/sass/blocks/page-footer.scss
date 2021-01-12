@@ -5,7 +5,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -14,8 +14,8 @@
     padding-top: 51px;
     padding-bottom: 58px;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 57px;
-  }
+.socials__link {
+  line-height: 0;
 }

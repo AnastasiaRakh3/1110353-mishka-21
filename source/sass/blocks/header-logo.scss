@@ -1,22 +1,18 @@
 .header-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 79px;
+  padding: 22px;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    height: 100%;
-    padding-left: 50px;
+    padding: 22px 49px 20px 49px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
-    padding-left: 0;
+    padding: 9px 20px 7px 20px;
   }
 }
 
 .header-logo img {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 46px;
@@ -25,5 +21,13 @@
   @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

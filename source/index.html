@@ -21,7 +21,7 @@
           </picture>
         </a>
       </div>
-      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+      <nav class="page-header__nav page-header__nav--nojs"><!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
@@ -45,7 +45,7 @@
               <svg class="user-list__icon user-list__icon--search" width="18" height="18" aria-label="hidden">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
-              <span>Поиск по сайту</span>
+              <span class="user-list__text">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -53,7 +53,7 @@
               <svg class="user-list__icon user-list__icon--cart" width="21" height="18" aria-label="hidden">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
-              <span>Корзина: пока пуста</span>
+              <span class="user-list__text" >Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
@@ -67,18 +67,18 @@
         <h1 class="main-header__heading">Милые штуки ручной <br> работы для дома</h1>
       </div>
       <ul class="main-header__menu menu">
-        <li class="menu__item">
+        <li class="menu__item menu__item--interior">
           <a class="menu__link menu__link--interior" href="catalog.html">
             <span>Предметы <br> интерьера</span>
-            <svg class="menu__icon--interior" width="40" height="62" aria-label="hidden">
+            <svg class="menu__icon menu__icon--interior" width="40" height="62" aria-label="hidden">
               <use xlink:href="img/sprite.svg#icon-menu-interior"></use>
             </svg>
           </a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item  menu__item--toys">
           <a class="menu__link menu__link--toys" href="catalog.html">
             <span>Детские <br> игрушки</span>
-            <svg class="menu__icon--toys" width="60" height="60" aria-label="hidden">
+            <svg class="menu__icon menu__icon--toys" width="60" height="60" aria-label="hidden">
               <use xlink:href="img/sprite.svg#icon-menu-toys"></use>
             </svg>
           </a>
@@ -121,7 +121,7 @@
           </div>
           <div class="promo__buy">
             <span class="promo__price">Цена: 990 руб.</span>
-            <a class="promo__button button" href="">Заказать</a>
+            <a class="promo__button button modal-btn-promo" href="">Заказать</a>
           </div>
         </div>
       </div>
@@ -172,41 +172,53 @@
     <section class="reviews">
       <div class="reviews__wrapper container">
         <h2 class="reviews__heading">Отзывы</h2>
-        <div class="reviews__list slider">
-          <blockquote class="reviews__item slider__item slider__item--current">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как <br> у популярных инстамамочек. <br> В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author">
-              <b class="reviews__author-name">Анастасия Красильникова</b>
-              <span class="reviews__author-mail">@misssssiskras</span>
-            </cite>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author">
-              <b class="reviews__author-name">Екатерина Красильникова</b>
-              <span class="reviews__author-mail">@misssssiskras2</span>
-            </cite>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author">
-              <b class="reviews__author-name">Елена Красильникова</b>
-              <span class="reviews__author-mail">@misssssiskras3</span>
-            </cite>
-          </blockquote>
+        <div class="reviews__nav">
+          <div class="reviews__list slider">
+            <blockquote class="reviews__item slider__item slider__item--current">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                как <br class="reviews__br reviews__br--mobile-desktop"> у популярных инстамамочек. <br class="reviews__br reviews__br--mobile"> В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br class="reviews__br reviews__br--mobile"> и мои <br class="reviews__br reviews__br--desktop"> фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author">
+                <b class="reviews__author-name">Анастасия Красильникова</b>
+                <span class="reviews__author-mail">@misssssiskras</span>
+              </cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author">
+                <b class="reviews__author-name">Екатерина Красильникова</b>
+                <span class="reviews__author-mail">@misssssiskras2</span>
+              </cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                <br class="reviews__br reviews__br--desktop">
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author">
+                <b class="reviews__author-name">Елена Красильникова</b>
+                <span class="reviews__author-mail">@misssssiskras3</span>
+              </cite>
+            </blockquote>
+          </div>
+          <div class="reviews__toggles">
+            <button class="reviews__toggle reviews__toggle--prev" type="button" aria-label="Предыдущий отзыв">
+            </button>
+            <button class="reviews__toggle reviews__toggle--next" type="button" aria-label="Следующий отзыв">
+            </button>
+          </div>
         </div>
-        <div class="reviews__toggles">
-          <button class="reviews__toggle reviews__toggle--prev" type="button" aria-label="Предыдущий отзыв"></button>
-          <button class="reviews__toggle reviews__toggle--next" type="button" aria-label="Следующий отзыв"></button>
-        </div>
-        <a class="reviews__button button" href="">Написать</a>
+        <a class="reviews__button button" href="page1.html">Написать</a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__header">
           <h2 class="contacts__heading">Контакты</h2>
+          <svg class="contacts__flag" width="47" height="81" aria-label="hidden">
+            <use xlink:href="img/sprite.svg#icon-flag"></use>
+          </svg>
           <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__name">e-mail:</span>
@@ -220,52 +232,46 @@
           </ul>
         </div>
         <div class="contacts__map-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
-              alt="Карта с локацией магазина">
-          </picture>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3084932233467!2d30.322567283333694!3d59.93849747624844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563369028326!5m2!1sru!2sru" allowfullscreen=""></iframe>
         </div>
-        <a class="contacts__button button" href="">Напишите нам</a>
+        <a class="contacts__button button" href="page2.html">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="#!">
-        <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта «Мишка" width="102" height="34">
+        <svg class="footer-logo__icon" width="102" height="34" role="img" aria-label="Логотип сайта «Мишка">
+          <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--instagram" href="" aria-label="Перейти в Инстаграм">
-            <svg class="socials__icon socials__icon--instagram" width="22" height="22" aria-hidden="true">
+            <svg width="22" height="22" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--facebook" href="" aria-label="Перейти в Фейсбук">
-            <svg class="socials__icon socials__icon--facebook" width="15" height="28" aria-hidden="true">
+            <svg width="15" height="28" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--twitter" href="" aria-label="Перейти в Твиттер">
-            <svg class="socials__icon socials__icon--twitter" width="23" height="20" aria-hidden="true">
+            <svg width="23" height="20" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon" width="27" height="34" role="img" aria-label="Логотип HTML Academy">
+          <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy">
             <use xlink:href="img/sprite.svg#icon-copyright"></use>
           </svg>
         </a>
@@ -274,37 +280,25 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__heading">Добавить в корзину</h2>
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
-      <p class="modal__description">Выберите размер:</p>
-      <div class="modal__sizes">
-        <label class="modal__label" for="product-size-s">s</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-s" id="product-size-s" checked>
-        <label class="modal__label" for="product-size-m">m</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-m" id="product-size-m">
-        <label class="modal__label" for="product-size-l">l</label>
-        <input class="visually-hidden" type="radio" name="product-size" value="product-size-l" id="product-size-l">
-      </div>
-      <button class="modal__button button" type="submit">Добавить</button>
-    </form>
+    <div class="modal__wrapper"></div>
+    <div class="modal__item modal__item--promo">
+      <h2 class="modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <p class="modal__description">Выберите размер:</p>
+        <div class="modal__sizes">
+          <label class="modal__label modal__label--active" for="product-size-s">s</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="s" id="product-size-s" checked>
+          <label class="modal__label" for="product-size-m">m</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="m" id="product-size-m">
+          <label class="modal__label" for="product-size-l">l</label>
+          <input class="visually-hidden" type="radio" name="product-size" value="l" id="product-size-l">
+        </div>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 
-  <script>
-    var nav = document.querySelector('.page-header__nav');
-    var navToggle = document.querySelector('.page-header__nav-toggle');
-
-    nav.classList.remove('page-header__nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (nav.classList.contains('page-header__nav--closed')) {
-        nav.classList.remove('page-header__nav--closed');
-        nav.classList.add('page-header__nav--opened');
-      } else {
-        nav.classList.remove('page-header__nav--opened');
-        nav.classList.add('page-header__nav--closed');
-      }
-    })
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 

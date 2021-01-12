@@ -1,6 +1,14 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   min-width: $mobile-width;
   max-width: $desktop-width;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;

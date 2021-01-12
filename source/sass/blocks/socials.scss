@@ -29,3 +29,14 @@
 .socials__item:last-child {
   margin-right: 0;
 }
+
+.socials__link {
+  &:hover {
+    fill: $color-footer;
+  }
+
+  &:active {
+    fill: $color-footer;
+    opacity: 0.3;
+  }
+}
