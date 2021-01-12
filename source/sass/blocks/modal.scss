@@ -1,4 +1,4 @@
-.modal {
+.modal__wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@
   top: 100px;
   right: 0;
   left: 0;
-  z-index: 5;
+  z-index: 3;
   margin: auto;
   display: none;
   width: 100%;
