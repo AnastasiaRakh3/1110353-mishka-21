@@ -79,9 +79,9 @@ if (modalSizes.length) {
 }
 
 const slides = document.querySelectorAll(".slider__item");
+let current = 0;
 
 if (slides.length) {
-  let current = 0;
   const prev = document.querySelector(".reviews__toggle--prev");
   const next = document.querySelector(".reviews__toggle--next");
 
