@@ -12,7 +12,10 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const gulpif = require("gulp-if");
 const sync = require("browser-sync").create();
+
+const isProd = process.argv.includes("build");
 
 // Styles
 
@@ -59,11 +62,14 @@ const images = () => {
   return gulp
     .src("source/img/*.{png,jpg,svg}")
     .pipe(
-      imagemin([
-        imagemin.mozjpeg({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.svgo(),
-      ])
+      gulpif(
+        isProd,
+        imagemin([
+          imagemin.mozjpeg({ quality: 85, progressive: true }),
+          imagemin.optipng({ optimizationLevel: 3 }),
+          imagemin.svgo(),
+        ])
+      )
     )
     .pipe(gulp.dest("build/img"));
 };
@@ -76,7 +82,7 @@ const imagesBackground = () => {
     .src("source/img/background/*.{png,jpg,svg}")
     .pipe(
       imagemin([
-        imagemin.mozjpeg({ progressive: true }),
+        imagemin.mozjpeg({ quality: 85, progressive: true }),
         imagemin.optipng({ optimizationLevel: 3 }),
       ])
     )
@@ -85,23 +91,12 @@ const imagesBackground = () => {
 
 exports.imagesBackground = imagesBackground;
 
-// ImagesSprite
-
-const imagesSprite = () => {
-  return gulp
-    .src("source/img/icons/*.svg")
-    .pipe(imagemin([imagemin.svgo()]))
-    .pipe(gulp.dest("build/img/icons"));
-};
-
-exports.imagesSprite = imagesSprite;
-
 // WebP
 
 const createWebp = () => {
   return gulp
-    .src("build/img/*.{jpg,png}")
-    .pipe(webp({ quality: 90 }))
+    .src("source/img/*.{jpg,png}")
+    .pipe(webp({ quality: 85 }))
     .pipe(gulp.dest("build/img"));
 };
 
@@ -111,7 +106,8 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp
-    .src("build/img/icons/*.svg")
+    .src("source/img/icons/*.svg")
+    .pipe(imagemin([imagemin.svgo()]))
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -178,26 +174,13 @@ const build = gulp.series(
     copy,
     images,
     imagesBackground,
-    imagesSprite
-  ),
-  gulp.parallel(createWebp, sprite)
+    sprite,
+    createWebp
+  )
 );
 
 exports.build = build;
 
 // Default
 
-exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    copy,
-    images,
-    imagesBackground,
-    imagesSprite
-  ),
-  gulp.parallel(createWebp, sprite),
-  gulp.series(server, watcher)
-);
+exports.default = gulp.series(build, server, watcher);

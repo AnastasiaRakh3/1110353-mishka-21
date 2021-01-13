@@ -27,13 +27,13 @@
       bottom: -1px;
       width: 100%;
       height: 24px;
-      background-image: url("../../img/zigzag-menu-tablet.svg");
+      background-image: url("../img/zigzag-menu-tablet.svg");
       background-repeat: no-repeat;
     }
 
     @media (min-width: $desktop-width) {
       height: 34px;
-      background-image: url("../../img/zigzag-menu-desktop.svg");
+      background-image: url("../img/zigzag-menu-desktop.svg");
     }
   }
 }
