@@ -412,16 +412,11 @@ input:checked + .form__label--color::after {
 
 .form__field--tel:hover + .form__icon--tel,
 .form__field--tel:active + .form__icon--tel,
+.form__field--tel:focus + .form__icon--tel,
 .form__field--mail:hover + .form__icon--mail,
-.form__field--mail:active + .form__icon--mail {
+.form__field--mail:active + .form__icon--mail,
+.form__field--mail:focus + .form__icon--mail {
   fill: $color-decor1;
-}
-
-.form__field--name:focus,
-.form__field--tel:focus,
-.form__field--mail:focus,
-.form__field--comment:focus {
-  outline: none;
 }
 
 .form__end {
@@ -470,6 +465,11 @@ input:checked + .form__label--color::after {
   border-color: $color-decor1;
 }
 
+.form__field:focus {
+  outline: none;
+  border-color: $color-decor1;
+}
+
 .form__label--type,
 .form__label--color {
   &:hover::before {
@@ -486,8 +486,8 @@ input:focus + .form__label--color::before {
   border-color: $color-decor1;
 }
 
-input:focus:disabled + .form__label--type::before,
-input:focus:disabled + .form__label--color::before {
+input:disabled + .form__label--type::before,
+input:disabled + .form__label--color::before {
   border-color: $color-decor4;
   background-color: $color-decor4;
 }

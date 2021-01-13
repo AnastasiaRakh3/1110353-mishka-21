@@ -10,13 +10,15 @@
   background-color: transparent;
   border: 2px solid $color-text-general;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-origin;
     background-color: $color-text-general;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $color-text-general;
     outline: none;
   }
 }

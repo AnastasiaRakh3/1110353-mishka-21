@@ -145,19 +145,6 @@
 .video__watch {
   display: block;
   margin-bottom: -22px;
-  // width: 260px;
-  // height: 150px;
-
-  @media (min-width: $tablet-width) {
-    // width: 668px;
-    // height: 455px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    //   width: 683px;
-    //   height: 455px;
-  }
 }
 
 .video__button-play {
