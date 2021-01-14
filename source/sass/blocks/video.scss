@@ -54,9 +54,9 @@
   margin-top: 0;
   margin-bottom: 26.5px;
   padding: 21.5px 13px 0 90px;
+  font-weight: $bold;
   font-size: $text-fontsize-2;
   line-height: 24px;
-  font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
@@ -81,7 +81,7 @@
     left: 32px;
     width: 32px;
     height: 22px;
-    background-image: url("../../img/video-icon.svg");
+    background-image: url("../img/video-icon.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -116,7 +116,7 @@
 }
 
 .video__button {
-  margin: 0 34px 33px;
+  margin: 0 34px 31px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -144,19 +144,12 @@
 
 .video__watch {
   display: block;
-  margin-bottom: -22px;
-  // width: 260px;
-  // height: 150px;
+  max-height: 260px;
+  margin-bottom: -23px;
 
   @media (min-width: $tablet-width) {
-    // width: 668px;
-    // height: 455px;
+    max-height: 455px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    //   width: 683px;
-    //   height: 455px;
   }
 }
 
@@ -167,9 +160,9 @@
   height: 77px;
   padding: 0;
   background-color: transparent;
-  background-image: url("../../img/button-play.svg");
-  background-position: center;
+  background-image: url("../img/button-play.svg");
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -184,7 +177,6 @@
 
   &:hover {
     transform: scale(1.2);
-    outline: none;
   }
 
   &:active {

@@ -1,33 +1,52 @@
 .main-header {
-  background-image: url("../../img/hero-mobile.jpg");
+  position: relative;
+  background-color: $color-header-bg;
+  background-image: url("../img/background/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top -18px center;
   background-size: 568px auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-image: url("../img/background/hero-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -67px;
+    margin-top: -66px;
+    background-image: url("../img/background/hero-desktop.jpg");
     background-position: top center;
-    background-image: url("../../img/hero-desktop.jpg");
     background-size: 1150px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-desktop@2x.jpg");
+      background-image: url("../img/background/hero-desktop@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -66px;
+    margin-top: -64px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/zigzag-menu-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 34px;
+      background-image: url("../img/zigzag-menu-desktop.svg");
+    }
   }
 }
 
 .main-header--bg-color {
-  display: flex;
-  justify-content: center;
-  padding-top: 72.5px;
+  padding-top: 72px;
   padding-bottom: 73.5px;
   background-color: $color-bg;
   background-image: none;
@@ -36,11 +55,10 @@
     position: relative;
     z-index: -1;
     padding-top: 102px;
-    padding-bottom: 87px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 104px;
     padding-bottom: 112px;
   }
 
@@ -52,7 +70,7 @@
       bottom: -1px;
       width: 100%;
       height: 24px;
-      background-image: url("../../img/zigzag-header-desktop.svg");
+      background-image: url("../img/zigzag-header-desktop.svg");
       background-repeat: no-repeat;
     }
 
@@ -72,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 628px;
+    min-height: 626px;
   }
 }
 
@@ -105,8 +123,8 @@
 }
 
 .main-header--bg-color .main-header__heading {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-left: 10px;

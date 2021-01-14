@@ -6,12 +6,6 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 50px;
-
-    &--bg-color {
-      @media (min-width: $desktop-width) {
-        background-color: $color-bg;
-      }
-    }
   }
 
   .extra-list__item {
@@ -23,9 +17,9 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: $bold;
     font-size: $text-fontsize-1;
     line-height: 24px;
-    font-weight: $bold;
     color: $color-text-head;
 
     &:hover {

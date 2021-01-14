@@ -4,37 +4,14 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 41px;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 54px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 24px;
-      background-image: url("../../img/zigzag-menu-tablet.svg");
-      background-repeat: no-repeat;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 34px;
-      background-image: url("../../img/zigzag-menu-desktop.svg");
-    }
   }
 }
 
@@ -45,14 +22,18 @@
 .menu__link {
   flex-grow: 1;
   position: relative;
+  margin-right: -30px;
+  margin-left: -30px;
   padding-right: 30px;
   padding-left: 30px;
+  font-weight: $bold;
   font-size: 19px;
   line-height: 24px;
-  font-weight: $bold;
   color: $color-origin;
 
   @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
     padding-right: 36px;
     padding-left: 36px;
     font-size: $heading-fontsize-s2;
@@ -84,8 +65,6 @@
 }
 
 .menu__icon {
-  opacity: 0.5;
-
   &--interior {
     position: absolute;
     top: 23px;
@@ -93,7 +72,6 @@
 
     @media (min-width: $tablet-width) {
       top: 30px;
-      right: 36px;
     }
   }
 
@@ -105,8 +83,6 @@
     @media (min-width: $tablet-width) {
       top: 31px;
       right: 33px;
-      width: 61px;
-      height: 61px;
     }
   }
 }

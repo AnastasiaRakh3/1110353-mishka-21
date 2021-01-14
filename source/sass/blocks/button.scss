@@ -1,22 +1,24 @@
 .button {
   display: block;
   padding: 0;
+  font-weight: $bold;
   font-size: $heading-fontsize-s1;
   line-height: 48px;
-  font-weight: $bold;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: $color-text-general;
-  background-color: transparent;
   border: 2px solid $color-text-general;
+  background-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-origin;
     background-color: $color-text-general;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $color-text-general;
     outline: none;
   }
 }
