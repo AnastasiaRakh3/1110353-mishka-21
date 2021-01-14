@@ -11,7 +11,6 @@
 </head>
 
 <body class="page__body">
-
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__logo-wrapper">
@@ -23,7 +22,8 @@
           </picture>
         </a>
       </div>
-      <nav class="page-header__nav page-header__nav--nojs"><!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
+      <nav class="page-header__nav page-header__nav--nojs">
+        <!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
@@ -55,7 +55,7 @@
               <svg class="user-list__icon user-list__icon--cart" width="21" height="18" aria-label="hidden">
                 <use xlink:href="img/sprite.svg#cart-icon"></use>
               </svg>
-              <span class="user-list__text" >Корзина: пока пуста</span>
+              <span class="user-list__text">Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
@@ -64,28 +64,30 @@
     </div>
   </header>
   <main class="page__main">
-    <header class="main-header container">
-      <div class="main-header__wrapper">
-        <h1 class="main-header__heading">Милые штуки ручной <br> работы для дома</h1>
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__wrapper">
+          <h1 class="main-header__heading">Милые штуки ручной <br> работы для дома</h1>
+        </div>
+        <ul class="main-header__menu menu">
+          <li class="menu__item menu__item--interior">
+            <a class="menu__link menu__link--interior" href="catalog.html">
+              <span>Предметы <br> интерьера</span>
+              <svg class="menu__icon menu__icon--interior" width="40" height="62" aria-label="hidden">
+                <use xlink:href="img/sprite.svg#menu-interior"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item  menu__item--toys">
+            <a class="menu__link menu__link--toys" href="catalog.html">
+              <span>Детские <br> игрушки</span>
+              <svg class="menu__icon menu__icon--toys" width="60" height="60" aria-label="hidden">
+                <use xlink:href="img/sprite.svg#menu-toy"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="main-header__menu menu">
-        <li class="menu__item menu__item--interior">
-          <a class="menu__link menu__link--interior" href="catalog.html">
-            <span>Предметы <br> интерьера</span>
-            <svg class="menu__icon menu__icon--interior" width="40" height="62" aria-label="hidden">
-              <use xlink:href="img/sprite.svg#menu-interior"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="menu__item  menu__item--toys">
-          <a class="menu__link menu__link--toys" href="catalog.html">
-            <span>Детские <br> игрушки</span>
-            <svg class="menu__icon menu__icon--toys" width="60" height="60" aria-label="hidden">
-              <use xlink:href="img/sprite.svg#menu-toy"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </header>
     <section class="promo">
       <div class="promo__wrapper container">
@@ -118,7 +120,8 @@
               <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/promo-desktop.jpg 1x, img/promo-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
-              <img class="promo__img" src="img/promo-mobile.jpg" srcset="img/promo-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              <img class="promo__img" src="img/promo-mobile.jpg" srcset="img/promo-mobile@2x.jpg 2x"
+                alt="Вязаные корзинки">
             </picture>
           </div>
           <div class="promo__buy">
@@ -177,27 +180,23 @@
         <div class="reviews__nav">
           <div class="reviews__list slider">
             <blockquote class="reviews__item slider__item slider__item--current">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                как &zwnj; <br class="reviews__br reviews__br--mobile-desktop"> у популярных инстамамочек. &zwnj; <br class="reviews__br reviews__br--mobile"> В отчаянии, я накупила аксессуаров и игрушек в Мишке, &zwnj; <br class="reviews__br reviews__br--mobile"> и мои &zwnj; <br class="reviews__br reviews__br--desktop"> фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как &zwnj; <br class="reviews__br reviews__br--mobile-desktop"> у популярных инстамамочек. &zwnj; <br class="reviews__br reviews__br--mobile"> В отчаянии, я накупила аксессуаров и игрушек в Мишке, &zwnj; <br class="reviews__br reviews__br--mobile"> и мои &zwnj; <br class="reviews__br reviews__br--desktop"> фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
                 <b class="reviews__author-name">Анастасия Красильникова</b>
                 <span class="reviews__author-mail">@misssssiskras</span>
               </cite>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
                 <b class="reviews__author-name">Екатерина Красильникова</b>
                 <span class="reviews__author-mail">@misssssiskras2</span>
               </cite>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                <br class="reviews__br reviews__br--desktop">
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+                такого &zwnj; <br class="reviews__br reviews__br--desktop"> количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
               <cite class="reviews__author">
                 <b class="reviews__author-name">Елена Красильникова</b>
                 <span class="reviews__author-mail">@misssssiskras3</span>
@@ -234,7 +233,9 @@
           </ul>
         </div>
         <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3084932233467!2d30.322567283333694!3d59.93849747624844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563369028326!5m2!1sru!2sru" allowfullscreen=""></iframe>
+          <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3084932233467!2d30.322567283333694!3d59.93849747624844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563369028326!5m2!1sru!2sru"
+            allowfullscreen=""></iframe>
         </div>
         <a class="contacts__button button" href="page2.html">Напишите нам</a>
       </div>
@@ -280,7 +281,6 @@
       </div>
     </div>
   </footer>
-
   <section class="modal">
     <div class="modal__wrapper"></div>
     <div class="modal__item modal__item--promo">
@@ -299,9 +299,7 @@
       </form>
     </div>
   </section>
-
   <script src="js/script.min.js"></script>
-
 </body>
 
 </html>

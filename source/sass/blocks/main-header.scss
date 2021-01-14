@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  background-color: $color-header-bg;
   background-image: url("../img/background/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top -18px center;
@@ -11,8 +12,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -66px;
-    background-position: top center;
     background-image: url("../img/background/hero-desktop.jpg");
+    background-position: top center;
     background-size: 1150px auto;
 
     @media (min-resolution: 2dppx) {
@@ -45,7 +46,7 @@
 }
 
 .main-header--bg-color {
-  padding-top: 72.5px;
+  padding-top: 72px;
   padding-bottom: 73.5px;
   background-color: $color-bg;
   background-image: none;
@@ -122,10 +123,7 @@
 }
 
 .main-header--bg-color .main-header__heading {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
 
   @media (min-width: $tablet-width) {

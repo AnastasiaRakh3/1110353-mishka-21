@@ -25,7 +25,6 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
     font-size: $text-fontsize-2;
     line-height: 30px;
   }
@@ -103,6 +102,7 @@
 
     @media (min-width: $desktop-width) {
       padding-top: 52px;
+      padding-left: 177px;
     }
   }
 
@@ -132,8 +132,8 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
-      padding-left: 0;
       padding-top: 50px;
+      padding-left: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -147,8 +147,8 @@
   position: absolute;
   top: -8px;
   padding-right: 22px;
-  line-height: 16px;
   font-weight: $bold;
+  line-height: 16px;
   text-transform: uppercase;
   color: $color-main1;
   background-color: $color-origin;
@@ -212,8 +212,8 @@
 }
 
 .form__label {
-  line-height: 18px;
   font-weight: $bold;
+  line-height: 18px;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
@@ -237,8 +237,8 @@
       width: 36px;
       height: 36px;
       margin-right: 19px;
-      border-radius: 50%;
       border: solid 2px $color-text-general;
+      border-radius: 50%;
 
       @media (min-width: $tablet-width) {
         width: 46px;
@@ -365,8 +365,8 @@ input:checked + .form__label--color::after {
     min-height: 108px;
     padding: 15px;
     line-height: 19px;
-    resize: none;
     border: solid 2px $color-text-general;
+    resize: none;
 
     @media (min-width: $tablet-width) {
       margin-left: 167px;
@@ -481,8 +481,8 @@ input:checked + .form__label--color::after {
 }
 
 .form__field:focus {
-  outline: none;
   border-color: $color-decor1;
+  outline: none;
 }
 
 .form__label--type,

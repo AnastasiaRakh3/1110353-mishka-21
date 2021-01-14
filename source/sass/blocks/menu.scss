@@ -26,9 +26,9 @@
   margin-left: -30px;
   padding-right: 30px;
   padding-left: 30px;
+  font-weight: $bold;
   font-size: 19px;
   line-height: 24px;
-  font-weight: $bold;
   color: $color-origin;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +72,6 @@
 
     @media (min-width: $tablet-width) {
       top: 30px;
-      right: 36px;
     }
   }
 
@@ -84,8 +83,6 @@
     @media (min-width: $tablet-width) {
       top: 31px;
       right: 33px;
-      width: 61px;
-      height: 61px;
     }
   }
 }

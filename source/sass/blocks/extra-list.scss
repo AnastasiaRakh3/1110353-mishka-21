@@ -17,9 +17,9 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: $bold;
     font-size: $text-fontsize-1;
     line-height: 24px;
-    font-weight: $bold;
     color: $color-text-head;
 
     &:hover {

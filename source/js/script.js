@@ -1,3 +1,5 @@
+"use strict";
+
 const nav = document.querySelector(".page-header__nav");
 const navToggle = document.querySelector(".page-header__nav-toggle");
 

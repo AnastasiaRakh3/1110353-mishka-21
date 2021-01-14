@@ -55,9 +55,9 @@
 .promo__heading {
   margin-top: 0;
   margin-bottom: 4px;
+  font-weight: $bold;
   font-size: $heading-fontsize-m1;
   line-height: 30px;
-  font-weight: $bold;
   color: $color-text-head;
 
   @media (min-width: $tablet-width) {
@@ -169,7 +169,7 @@
 }
 
 .promo__description {
-  // width: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -225,8 +225,8 @@
 .promo__price {
   align-self: center;
   margin-bottom: 24px;
+  font-weight: $bold;
   line-height: 24px;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
@@ -236,8 +236,6 @@
 
 .promo__button {
   @media (min-width: $tablet-width) {
-    // width: 100%;
-    box-sizing: border-box;
     font-size: $text-fontsize-2;
   }
 }

@@ -11,7 +11,6 @@
 </head>
 
 <body class="page__body">
-
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__logo-wrapper">
@@ -23,7 +22,8 @@
           </picture>
         </a>
       </div>
-      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs"><!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+        <!-- page-header__nav--nojs класс, который при отсутствии js заблокириет меню в открытом состоянии-->
         <button class="page-header__nav-toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="page-header__nav-site site-list">
           <li class="site-list__item">
@@ -63,7 +63,6 @@
       <p class="page-header__note page-header__note--bg-color">Бесплатная доставка по России</p>
     </div>
   </header>
-
   <main class="page__main">
     <div class="main-header main-header--bg-color">
       <div class="container">
@@ -72,8 +71,7 @@
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
       <div class="container">
-        <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-          свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <div class="container">
         <fieldset class="form__item form__item--type">
@@ -120,6 +118,7 @@
             <label class="form__label form__label--name" for="middle-name">Отчество:</label>
             <input class="form__field form__field--name" type="text" name="middle-name" id="middle-name"
               placeholder="Отчество, если желаете">
+          </div>
         </fieldset>
       </div>
       <div class="form__bg">
@@ -128,8 +127,8 @@
             <legend class="form__heading form__heading--tel">Тел</legend>
             <label class="visually-hidden" for="customer-tel">Телефон</label>
             <input class="form__field form__field--tel" type="tel" name="customer-tel" id="customer-tel"
-              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              required>
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <svg class="form__icon form__icon--tel" width="25" height="24" aria-label="hidden">
               <use xlink:href="img/sprite.svg#form-tel"></use>
             </svg>
@@ -163,7 +162,6 @@
       </div>
     </form>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo footer-logo" href="#!">
@@ -204,9 +202,7 @@
       </div>
     </div>
   </footer>
-
   <script src="js/script.min.js"></script>
-
 </body>
 
 </html>

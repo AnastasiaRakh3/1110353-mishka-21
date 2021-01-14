@@ -80,11 +80,11 @@
 }
 
 .product-card__name {
-  font-size: $text-fontsize-2;
-  line-height: 24px;
-  font-weight: $bold;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: $bold;
+  font-size: $text-fontsize-2;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: $heading-fontsize-s2;
@@ -120,8 +120,8 @@
 
 .product-card__price {
   font-size: $text-fontsize-1;
-  line-height: 24px;
   font-weight: $bold;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: $text-fontsize-2;
@@ -168,6 +168,10 @@
       margin-right: 45px;
       margin-bottom: 7.5px;
     }
+  }
+
+  .product-card__info {
+    padding-top: 25px;
   }
 }
 
