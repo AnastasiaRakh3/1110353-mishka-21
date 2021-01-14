@@ -6,12 +6,6 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 50px;
-
-    &--bg-color {
-      @media (min-width: $desktop-width) {
-        background-color: $color-bg;
-      }
-    }
   }
 
   .extra-list__item {

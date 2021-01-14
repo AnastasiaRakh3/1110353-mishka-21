@@ -17,16 +17,6 @@
     width: 478px;
     padding-left: 0;
   }
-
-  &--bg-color {
-    @media (min-width: $tablet-width) {
-      background-color: $color-bg;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-color: transparent;
-    }
-  }
 }
 
 .site-list__item {

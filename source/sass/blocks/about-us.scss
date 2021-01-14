@@ -10,13 +10,6 @@
   }
 }
 
-.about-us__wrapper {
-  @media (min-width: $desktop-width) {
-    padding-left: 225px;
-    padding-right: 225px;
-  }
-}
-
 .about-us__heading {
   margin-top: 0;
   margin-bottom: 0;
@@ -30,6 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 176px;
     font-size: $heading-fontsize-l3;
     line-height: 57px;
   }
@@ -44,6 +38,11 @@
     column-count: 2;
     gap: 0;
     margin-top: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 176px;
+    margin-left: 176px;
   }
 }
 

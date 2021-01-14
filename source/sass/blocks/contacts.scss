@@ -18,9 +18,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 460px 527px;
+    grid-template-columns: 525px 527px;
     grid-template-rows: 1fr 52px;
-    padding-left: 114px;
   }
 }
 
@@ -34,15 +33,12 @@
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    padding-left: 110px;
   }
 }
 
 .contacts__heading {
   margin-top: 0;
   margin-bottom: 28px;
-  padding-right: 30px;
-  padding-left: 30px;
   font-size: $heading-fontsize-s1;
   font-weight: $bold;
   color: $color-text-head;
@@ -50,17 +46,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 49px;
-    padding-right: 50px;
-    padding-left: 50px;
     font-size: $heading-fontsize-l2;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 79px;
+    margin-left: 174px;
     margin-bottom: 32px;
-    padding-right: 0;
-    padding-left: 0;
     font-size: $heading-fontsize-l3;
     line-height: 57px;
   }
@@ -72,13 +65,13 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -22px;
-    right: 52px;
+    right: 2px;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
     top: 62px;
-    left: 0;
+    left: 63px;
   }
 }
 
@@ -86,22 +79,17 @@
   @include list-reset;
   margin-top: 0;
   margin-bottom: 64px;
-  padding-right: 30px;
-  padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    padding-right: 0;
-    padding-left: 0;
+    margin-left: 174px;
   }
 }
 
@@ -168,6 +156,8 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: 42px;
   background-image: url("../img/background/map-mobile.jpg");
   background-position: center;
@@ -176,6 +166,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+    margin-right: -50px;
+    margin-left: -50px;
     background-image: url("../img/background/map-tablet.jpg");
     background-size: 768px 457px;
   }
@@ -224,9 +216,6 @@
 }
 
 .contacts__button {
-  margin-right: 30px;
-  margin-left: 30px;
-
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-right: auto;
@@ -238,6 +227,6 @@
     grid-column: 1/2;
     grid-row: 2/3;
     margin-right: 0;
-    margin-left: 110px;
+    margin-left: 174px;
   }
 }
