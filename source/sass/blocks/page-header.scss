@@ -102,6 +102,8 @@
 
 .page-header__nav-site {
   display: none;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -126,11 +128,15 @@
     grid-row: 2/3;
     position: relative;
     z-index: 1;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 .page-header__nav-user {
   display: none;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;

@@ -1,13 +1,9 @@
 .contacts {
-  margin-bottom: 39px;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
     padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 105px;
     padding-top: 0;
   }
 }

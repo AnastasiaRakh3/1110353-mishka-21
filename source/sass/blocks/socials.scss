@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
   border-bottom: 1px solid $color-decor4;
 
   @media (min-width: $tablet-width) {
@@ -31,6 +29,8 @@
 }
 
 .socials__link {
+  line-height: 0;
+
   &:hover {
     fill: $color-footer;
   }

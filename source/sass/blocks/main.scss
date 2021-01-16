@@ -1,0 +1,75 @@
+.main__header {
+  @media (min-width: $tablet-width) {
+    margin-top: -66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -64px;
+  }
+}
+
+.main__promo {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
+.main__about-us {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.main__reviews {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.main__contacts {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
+.main__products {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.main__video {
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}

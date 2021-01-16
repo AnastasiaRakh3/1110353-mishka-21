@@ -2,21 +2,13 @@
   align-self: center;
   display: flex;
   align-items: center;
-  margin-top: 21px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -3px;
-  }
 }
 
 .copyright__text {
   margin-right: 27px;
   font-size: 19px;
   line-height: 18px;
+  color: $color-text-head;
 }
 
 .copyright__link {

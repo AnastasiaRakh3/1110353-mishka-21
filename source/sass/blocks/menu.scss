@@ -1,7 +1,5 @@
 .menu {
   @include list-reset;
-  margin-top: 0;
-  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     display: grid;

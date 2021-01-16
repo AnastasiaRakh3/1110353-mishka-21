@@ -16,6 +16,19 @@
   }
 }
 
-.socials__link {
-  line-height: 0;
+.page-footer__socials {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-footer__copyright {
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+  }
 }

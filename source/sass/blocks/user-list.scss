@@ -1,8 +1,6 @@
 .user-list {
   @include list-reset;
   flex-direction: column;
-  margin-top: 0;
-  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -53,7 +51,12 @@
   @media (min-width: $tablet-width) {
     width: 82px;
     padding-left: 0;
-    font-size: 0;
+  }
+}
+
+.user-list__item:first-child .user-list__text {
+  @media (min-width: $tablet-width) {
+    @include v-h;
   }
 }
 
